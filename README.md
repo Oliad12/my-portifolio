@@ -1,7 +1,6 @@
-💼 My Portfolio
+### 💼 My Portfolio
 
 A modern, personal portfolio website built with **Next.js 15** and **TypeScript**, showcasing projects, skills, and professional experience with a sleek, responsive design.
-
 
 ![Next.js](https://img.shields.io/badge/Next.js-15.3.5-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-19.0.0-blue?style=for-the-badge&logo=react)
