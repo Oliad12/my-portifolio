@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+*{
+  font-family: outfit, ovo;
+ 
+}
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 6s linear infinite;
+  }
+}
+@theme {
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #11001F;
+  --color-text-light: #000000;
+  --color-text-dark: #ffffff;
+}
+
+body {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light);
+}
+
+.dark body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+   }
+   .navbar a {
+  @apply transition-colors duration-300;
+}
+
+.navbar a:hover {
+  @apply text-rose-400;
+}

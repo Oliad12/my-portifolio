@@ -1,0 +1,306 @@
+
+import user_image from './user-image.png';
+import code_icon from './code-icon.png';
+import code_icon_dark from './code-icon-dark.png';
+import project_icon from './project-icon.png';
+import project_icon_dark from './project-icon-dark.png';
+import vscode from './vscode.png';
+import firebase from './firebase.png';
+import figma from './figma.png';
+import git from './git.png';
+import mongodb from './mongodb.png';
+import right_arrow_white from './right-arrow-white.png';
+import logo from './logo.png';
+import mail_icon from './mail-icon.png';
+import mail_icon_dark from './mail_icon_dark.png';
+import profile_img1 from './profile-img1.png';
+import profile_img2 from './tt.png';
+import download_icon from './download-icon.png';
+import hand_icon from './hand-icon.png';
+import moon_icon from './moon_icon.png';
+import sun_icon from './sun_icon.png';
+import arrow_icon from './arrow-icon.png';
+import arrow_icon_dark from './arrow-icon-dark.png';
+import menu_black from './menu-black.png';
+import menu_white from './menu-white.png';
+import close_black from './close-black.png';
+import close_white from './close-white.png';
+import web_icon from './web-icon.png';
+import mobile_icon from './mobile-icon.png';
+import ui_icon from './ui-icon.png';
+import graphics_icon from './graphics-icon.png';
+import right_arrow from './right-arrow.png';
+import send_icon from './send-icon.png';
+import right_arrow_bold from './right-arrow-bold.png';
+import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+
+export const assets = {
+    user_image,
+    code_icon,
+    code_icon_dark,
+    project_icon,
+    project_icon_dark,
+    vscode,
+    firebase,
+    figma,
+    git,
+    mongodb,
+    right_arrow_white,
+    logo,
+    mail_icon,
+    mail_icon_dark,
+    profile_img1,
+    profile_img2,
+    download_icon,
+    hand_icon,
+    moon_icon,
+    sun_icon,
+    arrow_icon,
+    arrow_icon_dark,
+    menu_black,
+    menu_white,
+    close_black,
+    close_white,
+    web_icon,
+    mobile_icon,
+    ui_icon,
+    graphics_icon,
+    right_arrow,
+    send_icon,
+    right_arrow_bold,
+    right_arrow_bold_dark
+};
+
+export const toolsData = [vscode, firebase, mongodb, figma, git];
+
+export const workData = [
+  {
+    id: 1,
+    slug: "portfolio-website",
+    title: "Portfolio Website",
+    description: "A modern portfolio website built with Next.js and Tailwind CSS to showcase projects and skills professionally.",
+    bgImage: "/work-1.png",
+    gitUrl: "https://github.com/Oliad12/my-website.git",
+    previewUrl: "https://yourportfolio.com",
+    type: "Personal Project",
+    problem: [
+      "I wanted to showcase my skills and projects professionally online.",
+      "Needed a platform that is fully responsive and visually appealing."
+    ],
+    solution: [
+      "Built a fully responsive portfolio using Next.js and Tailwind CSS.",
+      "Integrated dynamic project pages and interactive animations with Framer Motion.",
+      "Optimized SEO and performance for better visibility."
+    ],
+    techStack: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion"],
+    screenshots: ["/work-1.png"],
+    outcome: [
+      "Improved personal brand online.",
+      "Attracted freelance clients.",
+      "Increased online visibility and credibility."
+    ]
+  },
+  {
+    id: 2,
+    slug: "geo-based-app",
+    title: "Geo Based App",
+    description: "A mobile app providing real-time location-based services with interactive maps and geolocation features.",
+    bgImage: "/work-2.png",
+    gitUrl: "",
+    previewUrl: "",
+    type: "Mobile Project",
+    problem: [
+      "Users needed location-based services in real-time.",
+      "Existing apps were slow or not user-friendly for navigation."
+    ],
+    solution: [
+      "Developed a mobile app with React Native and Firebase backend.",
+      "Integrated Google Maps API for real-time location tracking.",
+      "Implemented smooth UI/UX for easy navigation and interactions."
+    ],
+    techStack: ["React Native", "Firebase", "Google Maps API"],
+    screenshots: ["/work-2.png"],
+    outcome: [
+      "Delivered a smooth, interactive mobile app.",
+      "Improved user experience for location tracking.",
+      "Received positive feedback from users."
+    ]
+  },
+  {
+    id: 3,
+    slug: "photography-website",
+    title: "Photography Website",
+    description: "Website design project for photography showcasing UI/UX and responsive design skills.",
+    bgImage: "/work-3.png",
+    gitUrl: "",
+    previewUrl: "",
+    type: "Demo Project",
+    problem: [
+      "Photographers needed an online portfolio to showcase their work professionally.",
+      "Existing templates lacked customization and modern UI."
+    ],
+    solution: [
+      "Designed a fully responsive UI/UX for photographers.",
+      "Focused on showcasing images with a clean layout and smooth transitions.",
+      "Optimized for mobile and desktop devices."
+    ],
+    techStack: ["Figma", "HTML", "CSS", "JavaScript"],
+    screenshots: ["/work-3.png"],
+    outcome: [
+      "Created an attractive demo photography website.",
+      "Demonstrated UI/UX design skills.",
+      "Used as a portfolio piece for future clients."
+    ]
+  },
+  {
+    id: 4,
+    slug: "ui-ux-design",
+    title: "UI/UX Design Project",
+    description: "UI/UX design case study highlighting wireframing, prototyping, and accessibility principles.",
+    bgImage: "/work-4.png",
+    gitUrl: "",
+    previewUrl: "",
+    type: "Demo Project",
+    problem: [
+      "Clients needed a design that follows modern UI/UX principles.",
+      "Ensuring accessibility and usability was a challenge."
+    ],
+    solution: [
+      "Created wireframes and prototypes using Figma.",
+      "Applied best practices in usability and accessibility.",
+      "Iterated based on feedback to improve interaction and flow."
+    ],
+    techStack: ["Figma", "Adobe XD", "User Research", "Prototyping"],
+    screenshots: ["/work-4.png"],
+    outcome: [
+      "Produced a professional design case study.",
+      "Improved understanding of UI/UX design process.",
+      "Can be presented as a portfolio project."
+    ]
+  }
+];
+
+export const serviceData = [
+  {
+    slug: "web",
+    icon: assets.web_icon,
+    title: "Business Websites",
+    description: "High-performance, responsive websites built for growth and scalability.",
+    details:"I build modern, fast, and SEO-optimized websites using industry best practices. From landing pages to full-stack platforms, my focus is performance, accessibility, and long-term scalability.",
+    gradient: "from-indigo-500 to-purple-500",
+    tech: ["Next.js", "React","TypeScript", "Tailwind CSS", "SEO", "REST APIs"],
+    link: "/services/web"
+  },
+  {
+    slug: "admin-dashboard",
+    icon: assets.project_icon,
+    title: "Admin Dashboards",
+    description: "Custom dashboards to manage users, content, payments, and analytics.",
+    details:"I develop secure, scalable admin dashboards with full CRUD capabilities and analytics visualization using Next.js, Prisma, and PostgreSQL.",
+    gradient: "from-green-500 to-teal-500",
+    tech: ["Next.js", "Prisma", "PostgreSQL", "JWT/Clerk"],
+    link: "/services/admin-dashboard"
+  },
+  {
+    slug: "ui-ux",
+    icon: assets.ui_icon,
+    title: "UI / UX Design",
+    description: "Intuitive, user-centered designs that enhance engagement.",
+    details:"I design clean and accessible interfaces backed by UX principles, wireframes, and usability testing—ensuring your product is easy to use and visually appealing.",
+    gradient: "from-emerald-500 to-teal-500",
+    tech: ["Figma", "Wireframing", "Prototyping", "Design Systems", "Accessibility"],
+    link: "/services/ui-ux"
+  },
+  {
+    slug: "graphics",
+    icon: assets.graphics_icon,
+    title: "Graphic Design",
+    description: "Creative visuals that strengthen your brand identity.",
+    details:"I create professional brand assets including logos, banners, and marketing visuals that communicate clearly and align with your business goals.",
+    gradient: "from-orange-500 to-amber-500",
+    tech: ["Adobe Photoshop", "Illustrator", "Brand Identity", "Social Media Graphics"],
+    link: "/services/graphics"
+  }
+];
+export const testimonials = [
+  {
+    name: "Yobsan Dereje",
+    role: "Project Manager",
+    message:"Tibebu consistently delivers clean, scalable solutions and communicates clearly throughout the project.",
+    image: "/tt.png",
+  },
+  {
+    name: "Dawit Tadesse",
+    role: "Startup Founder",
+    message:"Very professional and reliable. I would absolutely work with him again.",
+    image: "/avatar-2.png",
+  },
+];
+
+export const achievementsList = [
+  { postfix: "+", metric: "Projects", value: 50 },
+  { prefix: "~", metric: "Users", value: 10 },
+  { prefix: ">", metric: "Years", value: 3 },
+  { postfix: "%", label: "On-time", value: 100 }
+];
+
+export const experienceData = [
+  {
+    company: "Bright Team Ethiopia",
+    role: "Senior Frontend Developer",
+    type: "Part-time",
+    duration: "May 2025 – Present · 10 mos",
+    location: "Remote · Addis Ababa, Bole",
+    highlights: [
+      "Built responsive web interfaces using Next.js, React.js, and TypeScript",
+      "Collaborated with cross-functional teams to deliver scalable frontend solutions",
+      "Implemented state management and optimized component performance",
+    ],
+    skills: ["Next.js", "React", "TypeScript", "PostgreSQL", "REST APIs"],
+  },
+  {
+    company: "Woldia University",
+    role: "Software Engineer",
+    type: "Part-time",
+    duration: "Jun 2022 – Jan 2026 · 3 yrs 8 mos",
+    location: "Onsite · Woldia, Ethiopia",
+    highlights: [
+      "Designed and developed scalable software solutions",
+      "Worked on business research and software design",
+    ],
+    skills: ["Software Design", "Team Collaboration", "Project Management", "Bootstrap", "Git", "Agile"],
+  },
+  {
+    company: "Crosslight Software Inc",
+    role: "Software Engineer Intern",
+    type: "Internship",
+    duration: "Mar 2025 – Jul 2025 · 5 mos",
+    location: "Onsite · Addis Ababa, Ethiopia",
+    highlights: [
+      "Assisted in fullstack web development using Next.js and Node.js",
+      "Collaborated with senior engineers on real-world projects",
+    ],
+    skills: ["React", "RESTful APIs", "Node.js", "Next.js", "Team Collaboration", "PostgreSQL", "Redux", "Shadcn/ui"],
+  },
+];
+
+export const educationData = [
+  {
+    degree: "Bachelor of Science in Software Engineering",
+    institution: "Woldia University",
+    duration: "2021 – 2026",
+    details: "Focused on software development, data structures, algorithms, databases, and modern web technologies.",
+  },
+  {
+    degree: "Full-Stack Web Development Training",
+    institution: "Online / Self-Taught",
+    duration: "2023 – 2025",
+    details: "Hands-on training in React, Next.js, TypeScript, Tailwind CSS, REST APIs, PostgreSQL, and modern frontend architecture.",
+  },
+  {
+    degree: "High School Diploma",
+    institution: "General Secondary Education",
+    duration: "2016 – 2020",
+    details: "Strong foundation in mathematics, logical thinking, and computer basics.",
+  },
+];
