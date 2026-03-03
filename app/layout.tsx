@@ -7,7 +7,6 @@ import {Footer} from "@/components/layout/Footer";
 import {Navbar} from "@/components/layout/Navbar";
 import ChatBot from "@/components/ChatBot";
 
-// Fonts
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -42,6 +41,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
+      <head>
+        <meta name="google-site-verification" content="Zs8n9l7Xo2a1e5v6b3c4d7e8f9g0h1i2j3k4l5m6n7o8p9q0r1s2t3u4v5w6x7y8z9" />
+      </head>
       <body className={`${inter.variable} ${outfit.variable} ${ovo.variable}
           font-sans antialiased bg-background text-foreground
           leading-8 overflow-x-hidden`}>
