@@ -127,5 +127,5 @@ If you find this project helpful, please give it a ⭐ on GitHub!
 ---
 
 **Built with ❤️ by [Tibebu Dereje](https://github.com/Oliad12)**
-
+**Built with ❤️ by [Tibebu Dereje](https://www.linkedin.com/in/tibebu12)**
 _Demonstrating modern full-stack development with AI integration, completely free to build and deploy._
