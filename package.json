@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "build": "webpack --mode production",
-    "start": "webpack serve --mode development"
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
