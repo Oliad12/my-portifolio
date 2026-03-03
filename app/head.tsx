@@ -1,36 +1,37 @@
+
 export default function Head() {
   return (
     <>
-      {/* SEO Metadata */}
       <title>Tibebu | Software Engineer</title>
-      <meta
-        name="description"
-        content="I build modern web apps that help businesses grow."
-      />
 
-      {/* Google Site Verification */}
-      <meta 
-      name="google-site-verification" 
-      content="-uw8Oim3ps2RWq5I1WpddMsOw0ZHR9xwV6GOY1uNFHE" />
+         {/* Basic Meta Tags */}
+      <meta name="description" content="I build modern web apps that help businesses grow." />
+      <meta name="keywords" content="Tibebu Dereje, Software Engineer, Web Developer, Portfolio, Full Stack" />
+      <meta name="author" content="Tibebu Dereje" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+      <meta
+        name="google-site-verification"
+        content="-uw8Oim3ps2RWq5I1WpddMsOw0ZHR9xwV6GOY1uNFHE"
+      />
+        {/* Favicon */}
       <link rel="icon" href="/favicon.ico" />
-        {/* Open Graph Metadata */}
-      <meta property="og:title" content="Tibebu | Software Engineer" />
-      <meta
-        property="og:description"
-        content="I build modern web apps that help businesses grow."
-      />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://tibe-port.vercel.app" />
-      <meta property="og:image" content="https://tibe-port.vercel.app/og-image.png" />
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" href="/favicon.ico" />
 
-      {/* Twitter Cards */}
+        {/* Open Graph Meta Tags */}
+      <meta property="og:title" content="Tibebu | Software Engineer" />
+      <meta property="og:description" content="Helping startups and businesses transform ideas into scalable, AI-powered platforms." />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="/_next/static/media/logo.12d9db97.png" />
+      <meta property="og:url" content="https://your-portfolio-domain.com" />
+
+         {/* Twitter Card Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Tibebu | Software Engineer" />
-      <meta
-        name="twitter:description"
-        content="I build modern web apps that help businesses grow."
-      />
-      <meta name="twitter:image" content="https://tibe-port.vercel.app/og-image.png" />
+      <meta name="twitter:description" content="Helping startups and businesses transform ideas into scalable, AI-powered platforms." />
+      <meta name="twitter:image" content="/_next/static/media/logo.12d9db97.png" />
     </>
   );
 }
