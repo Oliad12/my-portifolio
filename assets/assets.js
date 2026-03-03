@@ -77,27 +77,32 @@ export const workData = [
   {
     id: 1,
     slug: "portfolio-website",
-    title: "Portfolio Website",
-    description: "A modern portfolio website built with Next.js and Tailwind CSS to showcase projects and skills professionally.",
-    bgImage: "/work-1.png",
-    gitUrl: "https://github.com/Oliad12/my-website.git",
-    previewUrl: "https://yourportfolio.com",
+    title: "Modern Portfolio Website",
+    description:
+      "A high-performance personal portfolio built with Next.js 16 and Tailwind CSS to showcase projects, skills, and professional experience with clean UI and smooth animations.",    
+      bgImage: "/porti.png",
+    gitUrl: "https://github.com/Oliad12/my-portifolio.git",
+    previewUrl: "https://tibe-port.vercel.app/",
     type: "Personal Project",
     problem: [
-      "I wanted to showcase my skills and projects professionally online.",
-      "Needed a platform that is fully responsive and visually appealing."
+      "Needed a professional online presence to showcase projects and attract freelance/remote opportunities.",
+      "Wanted a fast, SEO-optimized, and fully responsive platform.",
+      "Required a modern UI with smooth animations and clean structure."
     ],
     solution: [
-      "Built a fully responsive portfolio using Next.js and Tailwind CSS.",
-      "Integrated dynamic project pages and interactive animations with Framer Motion.",
-      "Optimized SEO and performance for better visibility."
+      "Built using Next.js App Router for optimal performance and SEO.",
+      "Designed a fully responsive UI with Tailwind CSS.",
+      "Added interactive animations using Framer Motion.",
+      "Implemented reusable components and clean folder architecture.",
+      "Optimized performance using image optimization and lazy loading."
     ],
-    techStack: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion"],
-    screenshots: ["/work-1.png"],
+
+    techStack: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion", "Vercel"],
+    screenshots: ["/porti.png"],
     outcome: [
-      "Improved personal brand online.",
-      "Attracted freelance clients.",
-      "Increased online visibility and credibility."
+      "Strengthened personal brand and online credibility.",
+      "Improved recruiter visibility through SEO optimization.",
+      "Generated freelance leads and networking opportunities."
     ]
   },
   {
