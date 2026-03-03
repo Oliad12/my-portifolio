@@ -16,6 +16,7 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const firstLinkRef = useRef<HTMLAnchorElement>(null)
   const sheetContentRef = useRef<HTMLDivElement>(null)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => setIsScroll(window.scrollY > 50)
@@ -36,6 +37,9 @@ export const Navbar = () => {
       setTimeout(() => firstLinkRef.current?.focus(), 100)
     }
   }, [isMenuOpen])
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      useEffect(() => setMounted(true), [])
+    if (!mounted) return null
 
   const desktopMenuClass = isScroll
     ? isDark
@@ -84,22 +88,27 @@ export const Navbar = () => {
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden ml-3 focus:outline-none focus:ring-0">
+              className="md:hidden focus:outline-none focus:ring-0">
               <Image src={isDark ? assets.menu_white : assets.menu_black}
-                alt=""
-                className="w-6 cursor-pointer"/>
+                alt="menu-icon"
+                className="w-6 h-6 cursor-pointer"/>
             </Button>
           </SheetTrigger>
-
           <SheetContent
             side="right"
             ref={sheetContentRef}
-            className={`flex flex-col md:hidden gap-4 py-20 px-10 fixed top-0 right-0 list-none w-64 h-screen transition duration-500 ${mobileMenuClass}`}>
+            className={`flex flex-col md:hidden py-20 px-10 fixed top-0 right-0 list-none w-64 h-screen transition duration-500 ${mobileMenuClass}`}>
+              <div className="border-b pb-5 mb-6 flex justify-start">
+                <Image src={assets.profile_img2} alt="profile image" 
+                 className="w-16 h-16 rounded-full object-cover"/>
+              </div>  
+          <ul className="space-y-3 justify-center">
             <li><Link ref={firstLinkRef} className="font-Ov hover:text-rose-400 transition-colors duration-300" href="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
             <li><Link className="font-Ov hover:text-rose-400 transition-colors duration-300" href="/about" onClick={() => setIsMenuOpen(false)}>About Me</Link></li>
             <li><Link className="font-Ov hover:text-rose-400 transition-colors duration-300" href="/services" onClick={() => setIsMenuOpen(false)}>Services</Link></li>
             <li><Link className="font-Ov hover:text-rose-400 transition-colors duration-300" href="/projects" onClick={() => setIsMenuOpen(false)}>Project</Link></li>
             <li><Link className="font-Ov hover:text-rose-400 transition-colors duration-300" href="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
+          </ul>
           </SheetContent>
         </Sheet>
       </div>
