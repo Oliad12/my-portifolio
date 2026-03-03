@@ -226,14 +226,44 @@ export const testimonials = [
   {
     name: "Yobsan Dereje",
     role: "Project Manager",
-    message:"Tibebu consistently delivers clean, scalable solutions and communicates clearly throughout the project.",
+    message:
+      "Tibebu consistently delivers clean, scalable solutions and communicates clearly throughout the entire development cycle. A reliable and results-driven developer.",
     image: "/tt.png",
   },
   {
     name: "Dawit Tadesse",
     role: "Startup Founder",
-    message:"Very professional and reliable. I would absolutely work with him again.",
+    message:
+      "Professional, proactive, and highly skilled. Tibebu helped turn our idea into a production-ready application faster than expected.",
     image: "/avatar-2.png",
+  },
+  {
+    name: "Demeke Getane",
+    role: "Tech Lead",
+    message:
+      "Outstanding full-stack developer. His expertise in modern frameworks and backend architecture significantly improved our platform performance.",
+    image: "/avatar-3.png",
+  },
+  {
+    name: "Sara Williams",
+    role: "Product Manager",
+    message:
+      "Great attention to detail and strong ownership of tasks. Tibebu delivers high-quality code and always meets deadlines.",
+    image: "/avatar-4.png",
+  },
+  {
+    name: "Tilahun Tereke",
+    role: "Teammate",
+    message:
+      "A dependable developer who understands both business needs and technical execution. Highly recommended for complex web applications.",
+    image: "/avatar-5.png",
+  },
+  {
+    name: "Natnael Asefa",
+    role: "Startup CEO",
+    message:
+      "Clear communication, fast delivery, and exceptional problem-solving skills. I would gladly collaborate with Tibebu again.",
+    image: "/avatar-6.png",
   },
 ];
 
