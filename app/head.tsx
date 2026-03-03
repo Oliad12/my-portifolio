@@ -9,12 +9,9 @@ export default function Head() {
       />
 
       {/* Google Site Verification */}
-      <meta
-        name="google-site-verification"
-        content="Zs8n9l7Xo2a1e5v6b3c4d7e8f9g0h1i2j3k4l5m6n7o8p9q0r1s2t3u4v5w6x7y8z9"
-      />
-
-         {/* Favicon */}
+      <meta 
+      name="google-site-verification" 
+      content="-uw8Oim3ps2RWq5I1WpddMsOw0ZHR9xwV6GOY1uNFHE" />
       <link rel="icon" href="/favicon.ico" />
         {/* Open Graph Metadata */}
       <meta property="og:title" content="Tibebu | Software Engineer" />
