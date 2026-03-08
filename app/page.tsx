@@ -5,7 +5,9 @@ import Achievements from "@/components/home/Achievements";
 
 
 
+
 export default function Home() {
+ 
   return (
     <div className="min-h-screen bg-background">
       <HeroSection />

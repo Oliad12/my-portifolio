@@ -29,7 +29,7 @@ export const Footer = () => {
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-10">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -39,13 +39,10 @@ export const Footer = () => {
             
           >
             <Link href="/">
-              <motion.div whileHover={{ scale: 1.05 }} className="w-fit">
-                <Image
-                  src={assets.logo}
-                  alt="Tibebu"
-                  className="w-17 cursor-pointer"
-                  priority
-                />
+              <motion.div whileHover={{ scale: 1.05 }} className="flex  items-center gap-4 w-fit">
+                <Image src={assets.profile_img2} alt="profile image" 
+                 className="w-14 h-14 rounded-full object-cover"/>
+                <span className="text-xl font-bold bg-linear-to-r from-green-500 to-blue-500 bg-clip-text text-transparent">Tibebu Dereje</span>
               </motion.div>
             </Link>
 
@@ -53,7 +50,7 @@ export const Footer = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="text-muted-foreground mb-4"
+              className="text-muted-foreground mb-4 mt-4 text-medium"
             >
               Passionate about crafting modern digital experiences that combine
               clean design, strong engineering principles, and real-world
@@ -128,7 +125,7 @@ export const Footer = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="flex flex-col md:flex-col gap-4 px-[8%] py-5"
+            className="flex flex-col md:flex-col gap-4 sm:px-0 px-[8%] py-0 sm:py-5"
           >
             <h4 className="font-bold text-purple-400">Stay Updated</h4>
             <p className="text-sm text-muted-foreground">
