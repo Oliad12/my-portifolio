@@ -9,6 +9,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { assets } from "@/assets/assets"
 
 
+
 export const Navbar = () => {
   const { theme, setTheme } = useTheme()
   const isDark = theme === "dark"
@@ -66,13 +67,12 @@ export const Navbar = () => {
 
       <div className="flex items-center gap-4">
         <ul className={`hidden md:flex gap-2 p-0.5 lg:gap-8 items-center rounded-full px-7 py-2 transition duration-300 ${desktopMenuClass}`}>
-          <li><Link className="font-Ov hover:text-rose-400 transition-colors duration-300" href="/">Home</Link></li>
-          <li><Link className="font-Ov hover:text-rose-400 transition-colors duration-300" href="/about">About Me</Link></li>
-          <li><Link className="font-Ovo hover:text-rose-400 transition-colors duration-300" href="/services">Services</Link></li>
-          <li><Link className="font-Ov hover:text-rose-400 transition-colors duration-300" href="/projects">Project</Link></li>
-          <li><Link className="font-Ov hover:text-rose-400 transition-colors duration-300" href="/contact">Contact</Link></li>
+          <li><Link className="font-Ovo hover:text-purple-600 transition-colors duration-300" href="/">Home</Link></li>
+          <li><Link className="font-Ovo hover:text-purple-600 transition-colors duration-300" href="/about">About Me</Link></li>
+          <li><Link className="font-Ovo hover:text-purple-600 transition-colors duration-300" href="/services">Services</Link></li>
+          <li><Link className="font-Ovo hover:text-purple-600 transition-colors duration-300" href="/projects">Project</Link></li>
+          <li><Link className="font-Ovo hover:text-purple-600 transition-colors duration-300" href="/contact">Contact</Link></li>
         </ul>
-
         <Button
           variant="ghost"
           size="icon"
@@ -80,7 +80,7 @@ export const Navbar = () => {
           className="focus:outline-none focus:ring-0">
           <Image src={isDark ? assets.sun_icon : assets.moon_icon}
             alt="icon"
-            className="w-6 cursor-pointer"/>
+            className="w-5 cursor-pointer"/>
         </Button>
 
         <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
@@ -103,11 +103,11 @@ export const Navbar = () => {
                  className="w-16 h-16 rounded-full object-cover"/>
               </div>  
           <ul className="space-y-3 justify-center">
-            <li><Link ref={firstLinkRef} className="font-Ov hover:text-rose-400 transition-colors duration-300" href="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
-            <li><Link className="font-Ov hover:text-rose-400 transition-colors duration-300" href="/about" onClick={() => setIsMenuOpen(false)}>About Me</Link></li>
-            <li><Link className="font-Ov hover:text-rose-400 transition-colors duration-300" href="/services" onClick={() => setIsMenuOpen(false)}>Services</Link></li>
-            <li><Link className="font-Ov hover:text-rose-400 transition-colors duration-300" href="/projects" onClick={() => setIsMenuOpen(false)}>Project</Link></li>
-            <li><Link className="font-Ov hover:text-rose-400 transition-colors duration-300" href="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
+            <li><Link ref={firstLinkRef} className="font-Ovo hover:text-rose-700 transition-colors duration-300" href="/" onClick={() => setIsMenuOpen(false)}><span className='text-base'>🏠</span> Home</Link></li>
+            <li><Link className="font-Ovo  hover:text-rose-700 transition-colors duration-300" href="/about" onClick={() => setIsMenuOpen(false)}><span className='text-base'>ℹ️</span> About Me</Link></li>
+            <li><Link className="font-Ovo hover:text-rose-700 transition-colors duration-300" href="/services" onClick={() => setIsMenuOpen(false)}>Services</Link></li>
+            <li><Link className="font-Ovo hover:text-rose-700 transition-colors duration-300" href="/projects" onClick={() => setIsMenuOpen(false)}>Project</Link></li>
+            <li><Link className="font-Ovo hover:text-rose-700 transition-colors duration-300" href="/contact" onClick={() => setIsMenuOpen(false)}><span className='text-base'>📞</span> Contact</Link></li>
           </ul>
           </SheetContent>
         </Sheet>

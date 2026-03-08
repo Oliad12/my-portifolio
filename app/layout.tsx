@@ -1,7 +1,7 @@
 import { Inter, Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 import type { Metadata } from "next";
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import { Toaster } from "@/components/ui/sonner";
 import {Footer} from "@/components/layout/Footer";
 import {Navbar} from "@/components/layout/Navbar";

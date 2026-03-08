@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -9,6 +8,11 @@ import { assets } from "@/assets/assets";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 export const Footer = () => {
+  const socialLinks = [
+    { icon: Github, href: "https://github.com/Oliad12", label: "GitHub" },
+    { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
+    { icon: Linkedin, href: "https://linkedin.com/in/tibebu12", label: "LinkedIn"},
+  ];
   const navLinks = [
     { title: "Home", href: "/" },
     { title: "About", href: "/about" },
@@ -18,49 +22,90 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="w-full mt-12 py-12 px-6 md:px-16 lg:px-24 
-      bg-linear-to-b from-background to-muted/30
-      border-t border-border text-foreground">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <Link href="/">
-            <motion.div whileHover={{ scale: 1.05 }} className="w-fit">
-              <Image
-                src={assets.logo}
-                alt="Tibebu"
-                className="w-20 cursor-pointer"
-                priority
-              />
-            </motion.div>
-          </Link>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="mt-4 max-w-sm text-sm sm:text-base text-muted-foreground leading-relaxed font-(--font-ovo)"
-          >
-            Passionate about crafting modern digital
-            experiences that combine clean design, strong engineering
-            principles, and real-world business impact
-          </motion.p>
-        </motion.div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2">
+    <motion.footer
+      className="w-full mt-8 px-[8%] py-10 border-t border-cyan-500 border-border text-foreground scroll-mt-20"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-10">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            
+          >
+            <Link href="/">
+              <motion.div whileHover={{ scale: 1.05 }} className="w-fit">
+                <Image
+                  src={assets.logo}
+                  alt="Tibebu"
+                  className="w-17 cursor-pointer"
+                  priority
+                />
+              </motion.div>
+            </Link>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className="text-muted-foreground mb-4"
+            >
+              Passionate about crafting modern digital experiences that combine
+              clean design, strong engineering principles, and real-world
+              business impact
+            </motion.p>
+
+            <div className="flex space-x-4 mt-5">
+              <TooltipProvider>
+                {socialLinks.map((link) => {
+                  const Icon = link.icon;
+                  return (
+                    <motion.div
+                      key={link.label}
+                      whileHover={{ y: -4, scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                      transition={{ type: "spring", stiffness: 300 }}
+                    >
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <motion.a
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={link.label}
+                            className="flex items-center justify-center w-8 h-8 rounded-full border border-border hover:border-amber-500  
+                        hover:bg-blue-200 text-muted-foreground hover:text-background transition-colors"
+                          >
+                            <Icon className="h-5 w-5" />
+                          </motion.a>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p className="text-blue-500 absolute">{link.label}</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </motion.div>
+                  );
+                })}
+              </TooltipProvider>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            className="sm:px-20 px-[8%] py-5"
           >
             <h3 className="text-lg font-bold mb-4 text-blue-600">
               Quick Links
             </h3>
-            <ul className="flex flex-col gap-2">
+            <ul className="space-y-2">
               {navLinks.map((link) => (
                 <motion.li
                   key={link.title}
@@ -83,14 +128,16 @@ export const Footer = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="flex flex-col md:flex-col items-center justify-center gap-4"
+            className="flex flex-col md:flex-col gap-4 px-[8%] py-5"
           >
-            <h3 className="text-lg font-semibold text-primary">
-              Stay Updated
-            </h3>
+            <h4 className="font-bold text-purple-400">Stay Updated</h4>
+            <p className="text-sm text-muted-foreground">
+              Subscribe to get the latest updates and services.
+            </p>
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="flex items-center gap-3 py-3 px-4 rounded-full border bg-background shadow-sm">
+              className="flex items-center gap-3 py-3 px-4 w-max rounded-full border bg-background shadow-sm"
+            >
               <User className="w-5 h-5 opacity-70" />
               <input
                 type="email"
@@ -106,78 +153,27 @@ export const Footer = () => {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
               href="#"
-              className="px-4 py-1 rounded-full w-max flex items-center justify-between border bg-amber-900 border-black text-white font-Ovo transition-colors duration-300 hover:bg-slate-200 hover:text-black mx-auto sm:mx-0"
+              className="px-4 py-1 rounded-full w-max flex items-center justify-between border
+               bg-amber-900  text-white transition-colors duration-300 
+               hover:bg-slate-200 hover:text-black sm:mx-15"
             >
               Subscribe
             </motion.a>
           </motion.div>
         </div>
-      </div>
-
-      <motion.div
-        className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-6"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
-        <p className="text-sm font-medium text-muted-foreground">
-          © 2025{" "}
-          <span className="bg-linear-to-r from-[#07c911] to-[#250ed6] bg-clip-text text-transparent font-bold">
+        <motion.div
+          className="mt-14 pt-6 border-t text-sm text-muted-foreground "
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          © {new Date().getFullYear()}
+          <span className="font-semibold bg-linear-to-r from-green-500 to-blue-500 bg-clip-text text-transparent mx-2">
             Tibebu Dereje
           </span>
-          . All rights reserved.
-        </p>
-        <TooltipProvider>
-          <ul className="flex items-center gap-10">
-            {[
-              {
-                name: "GitHub",
-                url: "https://github.com/Oliad12",
-                icon: Github,
-              },
-              {
-                name: "Facebook",
-                url: "https://facebook.com/",
-                icon: Facebook,
-              },
-              {
-                name: "LinkedIn",
-                url: "https://linkedin.com/in/tibebu12",
-                icon: Linkedin,
-              },
-            ].map((item) => {
-              const Icon = item.icon;
-              return (
-                <motion.li
-                  key={item.name}
-                  whileHover={{ y: -4, scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <a
-                        href={item.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={item.name}
-                        className="flex items-center justify-center w-8 h-8 rounded-full border border-border hover:border-amber-500  
-                        hover:bg-blue-200 text-muted-foreground hover:text-background transition-colors"
-                      >
-                        <Icon className="w-5 h-5" />
-                      </a>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p className="text-purple-500">{item.name}</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </motion.li>
-              );
-            })}
-          </ul>
-        </TooltipProvider>
-      </motion.div>
-    </footer>
+          All rights reserved.
+        </motion.div>
+        </div>
+    </motion.footer>
   );
 };

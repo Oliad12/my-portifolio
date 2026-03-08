@@ -3,16 +3,14 @@
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { achievementsList } from "@/assets/assets";
-import { useTheme } from "next-themes";
+
 
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
   ssr: false,
 });
 
 export default function Achievements() {
-  const { theme } = useTheme();
-  const isDark = theme === "dark";
-
+ 
   return (
     <section className="w-full mt-5 px-3 md:px-7 lg:px-24 py-5 scroll-mt-20"> 
       <div className="sm:border rounded-md py-8 px-8 flex flex-col md:flex-row 
@@ -44,10 +42,7 @@ export default function Achievements() {
             </h3>
 
             <p
-              className={`mt-2 text-center text-sm relative z-10 ${
-                isDark ? "text-gray-300" : "text-gray-700"
-              }`}
-            >
+              className="mt-2 text-center text-sm font-Ovo relative z-10">
               {achievement.metric || achievement.label}
             </p>
           </motion.div>

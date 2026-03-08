@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "format": "prettier --write ."
+    "lint": "next lint", 
+    "format": "prettier --write .",
+    "type-check": "tsc --noEmit" 
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
