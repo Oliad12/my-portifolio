@@ -65,6 +65,8 @@ export function HeroSection() {
                 1000,
                 "AI-Powered Web Developer",
                 1000,
+                "DevOps Engineer",
+                1000,
               ]}
               speed={50}
               repeat={Infinity}
