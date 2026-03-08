@@ -7,6 +7,7 @@ import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { assets } from "@/assets/assets"
+import { Home, Phone, Info, Briefcase, Settings } from "lucide-react"
 
 
 
@@ -103,11 +104,11 @@ export const Navbar = () => {
                  className="w-16 h-16 rounded-full object-cover"/>
               </div>  
           <ul className="space-y-3 justify-center">
-            <li><Link ref={firstLinkRef} className="font-Ovo hover:text-rose-700 transition-colors duration-300" href="/" onClick={() => setIsMenuOpen(false)}><span className='text-base'>🏠</span> Home</Link></li>
-            <li><Link className="font-Ovo  hover:text-rose-700 transition-colors duration-300" href="/about" onClick={() => setIsMenuOpen(false)}><span className='text-base'>ℹ️</span> About Me</Link></li>
-            <li><Link className="font-Ovo hover:text-rose-700 transition-colors duration-300" href="/services" onClick={() => setIsMenuOpen(false)}>Services</Link></li>
-            <li><Link className="font-Ovo hover:text-rose-700 transition-colors duration-300" href="/projects" onClick={() => setIsMenuOpen(false)}>Project</Link></li>
-            <li><Link className="font-Ovo hover:text-rose-700 transition-colors duration-300" href="/contact" onClick={() => setIsMenuOpen(false)}><span className='text-base'>📞</span> Contact</Link></li>
+            <li><Link ref={firstLinkRef} className="font-Ovo flex items-center gap-4 hover:text-rose-700 transition-colors duration-300" href="/" onClick={() => setIsMenuOpen(false)}><Home className="w-5 h-5"/> Home</Link></li>
+            <li><Link className="font-Ovo flex items-center gap-4  hover:text-rose-700 transition-colors duration-300" href="/about" onClick={() => setIsMenuOpen(false)}><Info className="w-5 h-5"/> About Me</Link></li>
+            <li><Link className="font-Ovo flex items-center gap-4 hover:text-rose-700 transition-colors duration-300" href="/services" onClick={() => setIsMenuOpen(false)}><Settings className="w-5 h-5"/> Services</Link></li>
+            <li><Link className="font-Ovo flex items-center gap-4 hover:text-rose-700 transition-colors duration-300" href="/projects" onClick={() => setIsMenuOpen(false)}><Briefcase className="w-5 h-5"/> Project</Link></li>
+            <li><Link className="font-Ovo flex items-center gap-4 hover:text-rose-700 transition-colors duration-300" href="/contact" onClick={() => setIsMenuOpen(false)}><Phone className="w-5 h-5"/> Contact</Link></li>
           </ul>
           </SheetContent>
         </Sheet>
