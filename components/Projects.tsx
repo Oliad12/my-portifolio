@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export const Projects = () => {
   return (
@@ -64,9 +65,7 @@ export const Projects = () => {
                   <h2 className="text-sm font-bold font-Ovo">
                     {project.title}
                   </h2>
-                  <p className="text-sm font-bold font-Ovo">
-                    {project.type}
-                  </p>
+                  <p className="text-sm font-bold font-Ovo">{project.type}</p>
                 </div>
                 <Link
                   href={`/projects/${project.slug}`}
@@ -90,13 +89,22 @@ export const Projects = () => {
       <motion.a
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
         transition={{ duration: 0.6, delay: 1.2 }}
-        href={"/contact"}
-        className="w-max flex items-center justify-between gap-2 text-gray-700 border-[0.5px]
-              border-gray-700 rounded-full px-4 py-2 mx-auto hover:opacity-90  bg-linear-to-r from-[#DF8908] 
-              to-[#B415FF] duration-500"
+        href="/contact"
+        aria-label="Contact me to work together"
+        className="group w-max flex items-center justify-between gap-2 
+  text-white border border-transparent rounded-full 
+  px-6 py-3 mx-auto font-medium
+  bg-linear-to-r from-[#cbc0b0] to-[#2e2b2f]
+  shadow-lg hover:shadow-xl transition-all duration-300"
       >
         Let’s work together
+        <ArrowRight
+          size={18}
+          className="transition-transform duration-300 group-hover:translate-x-1"
+        />
       </motion.a>
     </motion.section>
   );
