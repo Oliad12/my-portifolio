@@ -72,18 +72,32 @@ export const assets = {
 };
 
 export const toolsData = [vscode, firebase, mongodb, figma, git];
+export type ProjectType = "All" | "Full-Stack" | "SaaS" | "DevOps" | "AI /ML";
 
-export const workData = [
+export const workData: {
+  id: number;
+  slug: string;
+  title: string;
+  description: string;
+  bgImage: string;
+  gitUrl: string;
+  previewUrl: string;
+  type: ProjectType; 
+  problem: string[];
+  solution: string[];
+  techStack: string[];
+  screenshots: string[];
+  outcome: string[];
+}[] = [
   {
     id: 1,
     slug: "portfolio-website",
     title: "Modern Portfolio Website",
-    description:
-      "A high-performance personal portfolio built with Next.js 16 and Tailwind CSS to showcase projects, skills, and professional experience with clean UI and smooth animations.",    
-      bgImage: "/porti.png",
+    description: "A high-performance personal portfolio built with Next.js 16 and Tailwind CSS.",
+    bgImage: "/porti.png",
     gitUrl: "https://github.com/Oliad12/my-portifolio.git",
     previewUrl: "https://tibe-port.vercel.app/",
-    type: "Personal Project",
+    type: "Full-Stack", 
     problem: [
       "Needed a professional online presence to showcase projects and attract freelance/remote opportunities.",
       "Wanted a fast, SEO-optimized, and fully responsive platform.",
@@ -96,7 +110,6 @@ export const workData = [
       "Implemented reusable components and clean folder architecture.",
       "Optimized performance using image optimization and lazy loading."
     ],
-
     techStack: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion", "Vercel"],
     screenshots: ["/porti.png"],
     outcome: [
@@ -113,7 +126,7 @@ export const workData = [
     bgImage: "/work-2.png",
     gitUrl: "",
     previewUrl: "",
-    type: "Mobile Project",
+    type: "SaaS", 
     problem: [
       "Users needed location-based services in real-time.",
       "Existing apps were slow or not user-friendly for navigation."
@@ -139,7 +152,7 @@ export const workData = [
     bgImage: "/work-3.png",
     gitUrl: "",
     previewUrl: "",
-    type: "Demo Project",
+    type: "Full-Stack",
     problem: [
       "Photographers needed an online portfolio to showcase their work professionally.",
       "Existing templates lacked customization and modern UI."
@@ -165,7 +178,7 @@ export const workData = [
     bgImage: "/work-4.png",
     gitUrl: "",
     previewUrl: "",
-    type: "Demo Project",
+    type: "DevOps", 
     problem: [
       "Clients needed a design that follows modern UI/UX principles.",
       "Ensuring accessibility and usability was a challenge."

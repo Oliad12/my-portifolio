@@ -47,7 +47,7 @@ export const Navbar = () => {
     ? isDark
       ? "bg-transparent border-0 shadow-none text-white"
       : "bg-white border border-purple-500 shadow-sm"
-    : "bg-white/50 border border-gray-700 backdrop-blur shadow-sm dark:border dark:border-white/50 dark:bg-transparent"
+    : "bg-white/50 border border-gray-700 backdrop-blur shadow-sm dark:border-white/50 dark:bg-transparent"
 
   const mobileMenuClass = isDark
     ? "dark:bg-[#2a004a] dark:text-white"
@@ -56,7 +56,6 @@ export const Navbar = () => {
   return (
     <nav className={`fixed w-full top-0 lg:py-0 xl:px-[8%]  flex items-center justify-between z-50 transition-all duration-300 
       ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-white/10 dark:shadow-white/20" : ""}`} >
-      {/* Logo */}
       <Link href="/" className="flex flex-row font-semibold text-2xl md:text-3xl items-center justify-center">
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
