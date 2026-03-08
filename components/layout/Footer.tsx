@@ -38,9 +38,9 @@ export const Footer = () => {
             viewport={{ once: true }}
             
           >
-            <Link href="/">
+            <Link href="#top">
               <motion.div whileHover={{ scale: 1.05 }} className="flex  items-center gap-4 w-fit">
-                <Image src={assets.profile_img2} alt="profile image" 
+                <Image src={assets.profile_img2} alt="profile image"
                  className="w-14 h-14 rounded-full object-cover"/>
                 <span className="text-xl font-bold bg-linear-to-r from-green-500 to-blue-500 bg-clip-text text-transparent">Tibebu Dereje</span>
               </motion.div>
