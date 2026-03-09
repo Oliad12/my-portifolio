@@ -97,7 +97,7 @@ export const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="sm:px-20 px-[8%] py-5"
+            className="flex flex-col items-start lg:items-center md:items-center sm:px-2 px-[2%] py-3"
           >
             <h3 className="text-lg font-bold mb-4 text-blue-600">
               Quick Links
@@ -125,7 +125,7 @@ export const Footer = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="flex flex-col md:flex-col gap-4 sm:px-0 px-[8%] py-0 sm:py-5"
+            className="flex flex-col md:flex-col gap-4 sm:px-2 px-[2%] py-3"
           >
             <h4 className="font-bold text-purple-400">Stay Updated</h4>
             <p className="text-sm text-muted-foreground">
@@ -159,14 +159,14 @@ export const Footer = () => {
           </motion.div>
         </div>
         <motion.div
-          className="mt-14 pt-6 border-t text-sm text-muted-foreground "
+          className="mt-14 pt-6 border-t text-sm text-muted-foreground"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
           © {new Date().getFullYear()}
           <span className="font-semibold bg-linear-to-r from-green-500 to-blue-500 bg-clip-text text-transparent mx-2">
-            Tibebu Dereje
+            Tibebu Dereje.
           </span>
           All rights reserved.
         </motion.div>
