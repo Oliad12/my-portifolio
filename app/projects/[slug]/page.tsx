@@ -6,11 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Github, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
 
@@ -42,15 +38,15 @@ export default function ProjectDetail() {
           className="object-cover object-center brightness-75"
           priority
         />
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 text-white">
-            {project.title}
-          </h1>
-          <p className="max-w-3xl mx-auto text-sm sm:text-lg md:text-xl text-white opacity-90">
-            {project.description}
-          </p>
-        </div>
       </section>
+      <div className="text-center mt-10 space-y-6">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-3 font-Ovo">
+          {project.title}
+        </h1>
+        <p className="max-w-3xl text-sm sm:text-lg md:text-xl font-Ovo opacity-90">
+          {project.description}
+        </p>
+      </div>
       {project.techStack && (
         <section className="mb-16 mt-12">
           <h2 className="text-2xl md:text-3xl font-semibold mb-6">
@@ -74,7 +70,9 @@ export default function ProjectDetail() {
 
       {project.problem && (
         <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-6">The Problem</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+            The Problem
+          </h2>
           <ul className="list-disc list-inside space-y-2 text-foreground font-Ovo text-sm sm:text-base md:text-lg">
             {project.problem.map((item: string, index: number) => (
               <motion.li
@@ -92,7 +90,9 @@ export default function ProjectDetail() {
 
       {project.solution && (
         <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-6">The Solution</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+            The Solution
+          </h2>
           <ul className="list-decimal list-inside space-y-2 text-foreground font-Ovo text-sm sm:text-base md:text-lg">
             {project.solution.map((item: string, index: number) => (
               <motion.li
@@ -111,7 +111,7 @@ export default function ProjectDetail() {
       {project.screenshots && project.screenshots.length > 0 && (
         <section className="mb-20">
           <h2 className="text-3xl md:text-4xl font-semibold mb-10">Preview</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-5">
             {project.screenshots.map((img: string, index: number) => (
               <motion.div
                 key={index}

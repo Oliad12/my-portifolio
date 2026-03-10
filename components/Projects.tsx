@@ -77,7 +77,7 @@ export const Projects = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-10 gap-3"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-10 gap-5"
       >
         {filteredProjects.map((project, index) => (
           <motion.div
@@ -90,7 +90,7 @@ export const Projects = () => {
               style={{ backgroundImage: `url(${project.bgImage})` }}
             >
               <CardContent
-                className="bg-gray-600 w-10/11 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2
+                className="bg-gray-500 w-10/11 rounded-md absolute bottom-2 left-1/2 -translate-x-1/2
                      py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
               >
                 <div>

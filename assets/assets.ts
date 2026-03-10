@@ -148,9 +148,9 @@ export const workData: {
     id: 3,
     slug: "photography-website",
     title: "Photography Website",
-    description: "Website design project for photography showcasing UI/UX and responsive design skills.",
+    description: "A modern photography website built with Next.js, Tailwind CSS, Sanity CMS, and Cloudinary. Features responsive galleries, optimized images, and smooth animations.",
     bgImage: "/work-3.png",
-    gitUrl: "",
+    gitUrl: "https://github.com/Oliad12/modern-photography-portfolio.git",
     previewUrl: "",
     type: "Full-Stack",
     problem: [
@@ -162,10 +162,10 @@ export const workData: {
       "Focused on showcasing images with a clean layout and smooth transitions.",
       "Optimized for mobile and desktop devices."
     ],
-    techStack: ["Figma", "HTML", "CSS", "JavaScript"],
+    techStack: ["Figma", "Nextjs", "Tailwind CSS", "Typescript", "Sanity CMS", "Cloudinary"],
     screenshots: ["/work-3.png"],
     outcome: [
-      "Created an attractive demo photography website.",
+      "Created an attractive app photography website.",
       "Demonstrated UI/UX design skills.",
       "Used as a portfolio piece for future clients."
     ]
@@ -195,7 +195,40 @@ export const workData: {
       "Improved understanding of UI/UX design process.",
       "Can be presented as a portfolio project."
     ]
-  }
+  },
+  {
+  id: 5,
+  slug: "cms-project",
+  title: "Content Management system",
+  description: "A full-featured web-based CMS enabling users to create, manage, and publish content efficiently with role-based access and modern UX.",
+  bgImage: "/blogjpg.jpg",
+  gitUrl: "https://github.com/Tilahun-git/webserviceBlogApp_project.git",
+  previewUrl: "https://cms-project.vercel.app",
+  type: "Full-Stack",
+  problem: [
+    "Users needed a platform to manage content without technical knowledge.",
+    "Managing multiple roles, permissions, and publishing workflow was complex."
+  ],
+  solution: [
+    "Developed a responsive web application using Next.js and Tailwind CSS.",
+    "Implemented role-based access control and user authentication using JWT.",
+    "Integrated Hibernate ORM with PostgreSQL for scalable content storage.",
+    "Added WYSIWYG editor and media upload functionality using cloudinary.",
+    "Built admin dashboard for content approval, analytics, and workflow management."
+  ],
+  techStack: ["Next.js", "React", "Tailwind CSS", "Redux", "PostgreSQL", "JWT", "Spring Boot", "Hibernate", "RBAC", "Cloudinary"],
+  screenshots: [
+    "/screenshots/cms-dashboard.png",
+    "/screenshots/cms-editor.png",
+    "/screenshots/cms-media.png"
+  ],
+  outcome: [
+    "Delivered a fully functional CMS with user roles and workflow management.",
+    "Simplified content creation and publishing for non-technical users.",
+    "Enhanced portfolio by showcasing full-stack development skills.",
+    "Can be deployed on Vercel with cloud storage and authentication integration."
+  ]
+}
 ];
 
 export const serviceData = [
