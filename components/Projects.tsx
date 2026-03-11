@@ -97,7 +97,7 @@ export const Projects = () => {
                   <h2 className="text-sm font-bold font-Ovo">
                     {project.title}
                   </h2>
-                  <p className="text-sm font-bold font-Ovo">{project.type}</p>
+                  <p className="text-sm text-lime-500 font-Ovo">{project.type}</p>
                 </div>
                 <Link
                   href={`/projects/${project.slug}`}

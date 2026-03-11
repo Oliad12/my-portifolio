@@ -89,18 +89,18 @@ export const Contact: React.FC<ContactProps> = ({ isDark }) => {
           </p>
 
           <div className="space-y-4 text-muted-foreground text-lg">
-            <div className="flex items-center gap-3">
+            <a href="mailto:tibebudere22@gmail.com" className="flex items-center gap-3 text-emerald-600 hover:underline">
               <Mail className="w-5 h-5" />
               <span>tibebudere22@gmail.com</span>
-            </div>
-            <div className="flex items-center gap-3">
+            </a>
+            <a href="tel:+251929165615" className="flex items-center gap-3 text-emerald-600 hover:underline">
               <PhoneIncoming className="w-5 h-5" />
               <span>+251 929 165615</span>
-            </div>
-            <div className="flex items-center gap-3">
+            </a>
+            <a href="https://maps.google.com/?q=Addis+Ababa,+Ethiopia" className="flex items-center gap-3 text-emerald-600 hover:underline">
               <MapPin className="w-5 h-5" />
               <span>Addis Ababa, Ethiopia</span>
-            </div>
+            </a>
           </div>
         </motion.div>
 
