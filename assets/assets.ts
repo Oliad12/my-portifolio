@@ -118,32 +118,48 @@ export const workData: {
       "Generated freelance leads and networking opportunities."
     ]
   },
-  {
-    id: 2,
-    slug: "geo-based-app",
-    title: "Geo Based App",
-    description: "A mobile app providing real-time location-based services with interactive maps and geolocation features.",
-    bgImage: "/work-2.png",
-    gitUrl: "",
-    previewUrl: "",
-    type: "SaaS", 
-    problem: [
-      "Users needed location-based services in real-time.",
-      "Existing apps were slow or not user-friendly for navigation."
-    ],
-    solution: [
-      "Developed a mobile app with React Native and Firebase backend.",
-      "Integrated Google Maps API for real-time location tracking.",
-      "Implemented smooth UI/UX for easy navigation and interactions."
-    ],
-    techStack: ["React Native", "Firebase", "Google Maps API"],
-    screenshots: ["/work-2.png"],
-    outcome: [
-      "Delivered a smooth, interactive mobile app.",
-      "Improved user experience for location tracking.",
-      "Received positive feedback from users."
-    ]
-  },
+{
+  id: 2,
+  slug: "ai-expense-tracker",
+  title: "AI Expense Tracker",
+  description: "An intelligent expense tracking application that analyzes spending patterns and provides AI-powered financial insights.",
+  bgImage: "/work-5.png",
+  gitUrl: "https://github.com/yourusername/ai-expense-tracker",
+  previewUrl: "https://ai-expense-tracker.vercel.app",
+  type: "AI /ML",
+  problem: [
+    "Many people struggle to track daily expenses and understand their spending habits.",
+    "Traditional expense trackers only store data without giving useful financial insights.",
+    "Users need smart recommendations to manage budgets and reduce unnecessary spending."
+  ],
+  solution: [
+    "Built a full-stack expense tracking system with AI-powered financial insights.",
+    "Integrated AI to analyze user expenses and generate personalized spending advice.",
+    "Implemented visual charts and dashboards for clear financial overview.",
+    "Added category-based tracking and smart summaries for better financial decisions."
+  ],
+  techStack: [
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "Prisma",
+    "PostgreSQL",
+    "OpenAI API",
+    "Tailwind CSS",
+    "Chart.js"
+  ],
+  screenshots: [
+    "/expense-1.png",
+    "/expense-2.png",
+    "/expense-3.png"
+  ],
+  outcome: [
+    "Users can track and categorize expenses efficiently.",
+    "AI provides personalized financial insights and saving suggestions.",
+    "Interactive dashboard visualizes spending trends and budgets.",
+    "Demonstrates real-world AI + full-stack development skills."
+  ]
+},
   {
     id: 3,
     slug: "photography-website",
@@ -201,7 +217,7 @@ export const workData: {
   slug: "cms-project",
   title: "Content Management system",
   description: "A full-featured web-based CMS enabling users to create, manage, and publish content efficiently with role-based access and modern UX.",
-  bgImage: "/blogjpg.jpg",
+  bgImage: "/blog/blogging.jpg",
   gitUrl: "https://github.com/Tilahun-git/webserviceBlogApp_project.git",
   previewUrl: "https://cms-project.vercel.app",
   type: "Full-Stack",
@@ -218,9 +234,9 @@ export const workData: {
   ],
   techStack: ["Next.js", "React", "Tailwind CSS", "Redux", "PostgreSQL", "JWT", "Spring Boot", "Hibernate", "RBAC", "Cloudinary"],
   screenshots: [
-    "/screenshots/cms-dashboard.png",
-    "/screenshots/cms-editor.png",
-    "/screenshots/cms-media.png"
+    "/blog/cms-dashboard.png",
+    "/blog/user-dashboard.png",
+    "/blog/account.png"
   ],
   outcome: [
     "Delivered a fully functional CMS with user roles and workflow management.",
