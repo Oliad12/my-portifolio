@@ -29,13 +29,13 @@ export default function ProjectDetail() {
   }
 
   return (
-    <div className="w-full mt-12 px-4 md:px-[10%] lg:px-[14%] py-12 scroll-mt-20">
-      <section className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden rounded-xl">
+    <div className="w-full mt-18 px-4 md:px-[10%] lg:px-[14%] py-12 scroll-mt-20">
+      <section className="relative w-full aspect-video h-110 overflow-hidden rounded-x">
         <Image
           src={project.bgImage}
           alt={project.title}
           fill
-          className="object-cover object-center brightness-75"
+          className="object-contain object-center"
           priority
         />
       </section>

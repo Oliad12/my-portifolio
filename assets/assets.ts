@@ -1,9 +1,6 @@
 
 import user_image from './user-image.png';
-import code_icon from './code-icon.png';
-import code_icon_dark from './code-icon-dark.png';
 import project_icon from './project-icon.png';
-import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
 import firebase from './firebase.png';
 import figma from './figma.png';
@@ -11,35 +8,23 @@ import git from './git.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
-import mail_icon from './mail-icon.png';
-import mail_icon_dark from './mail_icon_dark.png';
 import profile_img1 from './profile-img1.png';
 import profile_img2 from './tt.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import moon_icon from './moon_icon.png';
 import sun_icon from './sun_icon.png';
-import arrow_icon from './arrow-icon.png';
-import arrow_icon_dark from './arrow-icon-dark.png';
 import menu_black from './menu-black.png';
 import menu_white from './menu-white.png';
-import close_black from './close-black.png';
-import close_white from './close-white.png';
 import web_icon from './web-icon.png';
 import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
 import graphics_icon from './graphics-icon.png';
-import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
-import right_arrow_bold from './right-arrow-bold.png';
-import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 
 export const assets = {
     user_image,
-    code_icon,
-    code_icon_dark,
     project_icon,
-    project_icon_dark,
     vscode,
     firebase,
     figma,
@@ -47,28 +32,19 @@ export const assets = {
     mongodb,
     right_arrow_white,
     logo,
-    mail_icon,
-    mail_icon_dark,
     profile_img1,
     profile_img2,
     download_icon,
     hand_icon,
     moon_icon,
     sun_icon,
-    arrow_icon,
-    arrow_icon_dark,
     menu_black,
     menu_white,
-    close_black,
-    close_white,
     web_icon,
     mobile_icon,
     ui_icon,
     graphics_icon,
-    right_arrow,
     send_icon,
-    right_arrow_bold,
-    right_arrow_bold_dark
 };
 
 export const toolsData = [vscode, firebase, mongodb, figma, git];
@@ -123,8 +99,8 @@ export const workData: {
   slug: "ai-expense-tracker",
   title: "AI Expense Tracker",
   description: "An intelligent expense tracking application that analyzes spending patterns and provides AI-powered financial insights.",
-  bgImage: "/work-5.png",
-  gitUrl: "https://github.com/yourusername/ai-expense-tracker",
+  bgImage: "/projects/expense/home3.png",
+  gitUrl: "https://github.com/Oliad12/ai-powered-expense-tracker",
   previewUrl: "https://ai-expense-tracker.vercel.app",
   type: "AI /ML",
   problem: [
@@ -149,9 +125,10 @@ export const workData: {
     "Chart.js"
   ],
   screenshots: [
-    "/expense-1.png",
-    "/expense-2.png",
-    "/expense-3.png"
+    "/projects/expense/dashboard.png",
+    "/projects/expense/budget.png",
+    "/projects/expense/transaction.png",
+    "/projects/expense/expense.png"
   ],
   outcome: [
     "Users can track and categorize expenses efficiently.",
@@ -217,7 +194,7 @@ export const workData: {
   slug: "cms-project",
   title: "Content Management system",
   description: "A full-featured web-based CMS enabling users to create, manage, and publish content efficiently with role-based access and modern UX.",
-  bgImage: "/blog/blogging.jpg",
+  bgImage: "/projects/blog/blogging.jpg",
   gitUrl: "https://github.com/Tilahun-git/webserviceBlogApp_project.git",
   previewUrl: "https://cms-project.vercel.app",
   type: "Full-Stack",
@@ -234,9 +211,9 @@ export const workData: {
   ],
   techStack: ["Next.js", "React", "Tailwind CSS", "Redux", "PostgreSQL", "JWT", "Spring Boot", "Hibernate", "RBAC", "Cloudinary"],
   screenshots: [
-    "/blog/cms-dashboard.png",
-    "/blog/user-dashboard.png",
-    "/blog/account.png"
+    "/projects/blog/cms-dashboard.png",
+    "/projects/blog/user-dashboard.png",
+    "/projects/blog/account.png"
   ],
   outcome: [
     "Delivered a fully functional CMS with user roles and workflow management.",
