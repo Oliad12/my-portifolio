@@ -99,7 +99,7 @@ export const workData: {
   slug: "ai-expense-tracker",
   title: "AI Expense Tracker",
   description: "An intelligent expense tracking application that analyzes spending patterns and provides AI-powered financial insights.",
-  bgImage: "/projects/expense/home3.png",
+  bgImage: "/projects/expense/home0.png",
   gitUrl: "https://github.com/Oliad12/ai-powered-expense-tracker",
   previewUrl: "https://ai-expense-tracker.vercel.app",
   type: "AI /ML",
