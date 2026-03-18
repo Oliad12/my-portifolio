@@ -221,7 +221,57 @@ export const workData: {
     "Enhanced portfolio by showcasing full-stack development skills.",
     "Can be deployed on Vercel with cloud storage and authentication integration."
   ]
+},
+{
+  id: 6,
+  slug: "ethiopian-ticket-marketplace",
+  title: "Ethiopian Event Ticketing",
+  description: "A full-stack real-time event ticketing platform built for the Ethiopian market, with Chapa (ETB) payments, smart queue system, QR ticket scanning, and a peer-to-peer resale marketplace.",
+  bgImage: "/projects/ticket/homet.png",
+  gitUrl: "https://github.com/Oliad12/ticket-marketplace-saas.git",
+  previewUrl: "https://ticketr.vercel.app",
+  type: "SaaS",
+  problem: [
+    "Ethiopian event organizers had no local ticketing platform that supports ETB payments via Chapa.",
+    "Existing solutions required Stripe Connect onboarding, blocking sellers in Ethiopia from getting started.",
+    "Buyers had no way to resell tickets they could no longer use, leading to wasted purchases.",
+    "Event entry validation was manual with no digital QR scanning support.",
+  ],
+  solution: [
+    "Built a full-stack ticketing SaaS with Chapa as the primary payment method for Ethiopian Birr (ETB).",
+    "Removed Stripe Connect requirement — sellers can create and sell tickets immediately.",
+    "Implemented a real-time queue system with time-limited ticket offers to prevent hoarding.",
+    "Added a peer-to-peer resale marketplace so buyers can list and transfer tickets to others.",
+    "Built a QR code ticket scanner for sellers to validate entries at the door.",
+    "Integrated email notifications via Resend for purchase confirmation, offer expiry, and cancellations.",
+  ],
+  techStack: [
+    "Next.js 15",
+    "TypeScript",
+    "Convex",
+    "Clerk",
+    "Chapa API",
+    "Stripe",
+    "Resend",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "ZXing (QR Scanner)",
+  ],
+  screenshots: [
+    "/projects/ticket/homet.png",
+    "/projects/ticket/event.png",
+    "/projects/ticket/scanner.png",
+    "/projects/ticket/seller.png",
+  ],
+  outcome: [
+    "Sellers can create events and accept ETB payments without any third-party onboarding.",
+    "Buyers get a fair queue-based purchase flow with real-time availability updates.",
+    "Resale marketplace enables peer-to-peer ticket transfers with full ownership tracking.",
+    "QR scanner allows instant ticket validation at event entry.",
+    "Demonstrates real-world SaaS development with payments, queues, and real-time data.",
+  ],
 }
+
 ];
 
 export const serviceData = [
