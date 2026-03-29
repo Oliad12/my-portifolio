@@ -101,7 +101,7 @@ export const workData: {
   description: "An intelligent expense tracking application that analyzes spending patterns and provides AI-powered financial insights.",
   bgImage: "/projects/expense/home0.png",
   gitUrl: "https://github.com/Oliad12/ai-powered-expense-tracker",
-  previewUrl: "https://ai-expense-tracker.vercel.app",
+  previewUrl: "https://expense-tracker.vercel.app",
   type: "AI /ML",
   problem: [
     "Many people struggle to track daily expenses and understand their spending habits.",
