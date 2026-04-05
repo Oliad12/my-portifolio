@@ -26,16 +26,20 @@ const ovo = Ovo({
 });
 
 export const metadata: Metadata = {
-  title: "Tibebu | Software Engineer",
-  description: "I build modern web apps that help businesses grow.",
+  title: "Tibebu Dereje - Software Engineer | AI & Fullstack Developer",
+  description:
+    "Portfolio of Tibebu Dereje, a Fullstack Developer specializing in AI, DevOps, and modern web applications.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
-   metadataBase: new URL("https://tibe-port.vercel.app"),
-};
+  metadataBase: new URL("https://tibebudere.vercel.app"),
 
+  verification: {
+    google: "-uw8Oim3ps2RWq5I1WpddMsOw0ZHR9xwV6GOY1uNFHE",
+  },
+};
 export default function RootLayout({
   children,
 }: {
