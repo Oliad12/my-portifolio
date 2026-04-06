@@ -72,7 +72,7 @@ export const workData: {
     description: "A high-performance personal portfolio built with Next.js 16 and Tailwind CSS.",
     bgImage: "/porti.png",
     gitUrl: "https://github.com/Oliad12/my-portifolio.git",
-    previewUrl: "https://tibe-port.vercel.app/",
+    previewUrl: "https://tibebudere.vercel.app/",
     type: "Full-Stack", 
     problem: [
       "Needed a professional online presence to showcase projects and attract freelance/remote opportunities.",
@@ -229,7 +229,7 @@ export const workData: {
   description: "A full-stack real-time event ticketing platform built for the Ethiopian market, with Chapa (ETB) payments, smart queue system, QR ticket scanning, and a peer-to-peer resale marketplace.",
   bgImage: "/projects/ticket/homet.png",
   gitUrl: "https://github.com/Oliad12/ticket-marketplace-saas.git",
-  previewUrl: "https://ticketr.vercel.app",
+  previewUrl: "https://ticket-marketplace-saas.vercel.app",
   type: "SaaS",
   problem: [
     "Ethiopian event organizers had no local ticketing platform that supports ETB payments via Chapa.",

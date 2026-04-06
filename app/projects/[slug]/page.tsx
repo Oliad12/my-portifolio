@@ -29,8 +29,8 @@ export default function ProjectDetail() {
   }
 
   return (
-    <div className="w-full mt-18 px-4 md:px-[10%] lg:px-[14%] py-12 scroll-mt-20">
-      <section className="relative w-full aspect-video h-110 overflow-hidden rounded-x">
+    <div className="w-full mt-16 px-4 md:px-[10%] lg:px-[14%] py-12 scroll-mt-20">
+      <section className="relative w-full h-48 sm:h-72 md:h-[450px] overflow-hidden rounded-xl">
         <Image
           src={project.bgImage}
           alt={project.title}
@@ -49,7 +49,7 @@ export default function ProjectDetail() {
       </div>
       {project.techStack && (
         <section className="mb-16 mt-12">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-6">
             Tech Stack
           </h2>
           <div className="flex flex-wrap gap-3">
@@ -70,7 +70,7 @@ export default function ProjectDetail() {
 
       {project.problem && (
         <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">
             The Problem
           </h2>
           <ul className="list-disc list-inside space-y-2 text-foreground font-Ovo text-sm sm:text-base md:text-lg">
@@ -90,7 +90,7 @@ export default function ProjectDetail() {
 
       {project.solution && (
         <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">
             The Solution
           </h2>
           <ul className="list-decimal list-inside space-y-2 text-foreground font-Ovo text-sm sm:text-base md:text-lg">
@@ -107,7 +107,6 @@ export default function ProjectDetail() {
           </ul>
         </section>
       )}
-
       {project.screenshots && project.screenshots.length > 0 && (
         <section className="mb-20">
           <h2 className="text-3xl md:text-4xl font-semibold mb-10">Preview</h2>
@@ -134,7 +133,7 @@ export default function ProjectDetail() {
 
       {project.outcome && (
         <section className="mb-20">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-6">Results</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">Results</h2>
           <ul className="list-disc list-inside space-y-2 text-foreground font-Ovo text-sm sm:text-base md:text-lg">
             {project.outcome.map((item: string, index: number) => (
               <motion.li
@@ -156,7 +155,7 @@ export default function ProjectDetail() {
             <TooltipTrigger asChild>
               <Button size="icon" variant="secondary" asChild>
                 <Link href={project.gitUrl || "#"} target="_blank">
-                  <Github className="h-10 w-10 cursor-pointer rounded-full" />
+                  <Github className="h-5 w-5" />
                 </Link>
               </Button>
             </TooltipTrigger>
@@ -167,7 +166,7 @@ export default function ProjectDetail() {
             <TooltipTrigger asChild>
               <Button size="icon" variant="secondary" asChild>
                 <Link href={project.previewUrl || "#"} target="_blank">
-                  <ExternalLink className="h-10 w-10 cursor-pointer" />
+                  <ExternalLink className="h-5 w-5" />
                 </Link>
               </Button>
             </TooltipTrigger>
@@ -188,3 +187,8 @@ export default function ProjectDetail() {
     </div>
   );
 }
+
+
+
+
+     
