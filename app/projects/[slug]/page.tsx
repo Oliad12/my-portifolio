@@ -10,6 +10,38 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
 
+const techIconMap: Record<string, string> = {
+  "next.js": "nextjs-plain",
+  "nextjs": "nextjs-plain",
+  "next.js 15": "nextjs-plain",
+  "react": "react-original",
+  "typescript": "typescript-plain",
+  "tailwind css": "tailwindcss-plain",
+  "node.js": "nodejs-plain",
+  "postgresql": "postgresql-plain",
+  "mongodb": "mongodb-plain",
+  "prisma": "prisma-original",
+  "figma": "figma-plain",
+  "git": "git-plain",
+  "firebase": "firebase-plain",
+  "redux": "redux-original",
+  "chart.js": "d3js-plain",
+  "spring boot": "spring-plain",
+  "java": "java-plain",
+  "docker": "docker-plain",
+  "vercel": "vercel-plain",
+  "clerk": "clerk-plain",
+  "stripe": "stripe-plain",
+  "cloudinary": "cloudinary-plain",
+  "framer motion": "framermotion-plain",
+  "convex": "convex-plain",
+  "jwt": "jsonwebtokens-plain",
+  "adobe xd": "xd-plain",
+  "vscode": "vscode-plain",
+};
+
+const monochromeIcons = new Set(["nextjs-plain", "vercel-plain", "prisma-original"]);
+
 export default function ProjectDetail() {
   const params = useParams();
   const slug = params.slug;
@@ -53,17 +85,30 @@ export default function ProjectDetail() {
             Tech Stack
           </h2>
           <div className="flex flex-wrap gap-3">
-            {project.techStack.map((tech: string, index: number) => (
-              <motion.span
-                key={index}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 * index }}
-                className="border px-3 sm:px-4 py-1 sm:py-2 rounded-full text-sm sm:text-base hover:bg-black hover:text-white transition cursor-pointer"
-              >
-                {tech}
-              </motion.span>
-            ))}
+            {project.techStack.map((tech: string, index: number) => {
+              const iconKey = techIconMap[tech] ?? techIconMap[tech.toLowerCase()];
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.05 * index }}
+                  className="flex items-center gap-2 border px-3 py-2 rounded-xl text-sm font-medium hover:bg-muted transition cursor-default"
+                >
+                  {iconKey ? (
+                    <i
+                      className={`devicon-${iconKey} ${monochromeIcons.has(iconKey) ? "" : "colored"} text-xl`}
+                      aria-hidden="true"
+                    />
+                  ) : (
+                    <span className="w-5 h-5 rounded-full bg-muted-foreground/20 flex items-center justify-center text-xs font-bold">
+                      {tech[0]}
+                    </span>
+                  )}
+                  {tech}
+                </motion.div>
+              );
+            })}
           </div>
         </section>
       )}

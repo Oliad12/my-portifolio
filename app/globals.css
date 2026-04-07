@@ -26,6 +26,17 @@ body {
   color: var(--color-text-dark);
 }
 
+/* Fix devicons visibility in dark mode — invert plain/single-color icons */
+.dark [class*="devicon-"].colored {
+  filter: brightness(1.15) saturate(1.1);
+}
+
+/* Next.js and Vercel use black fills — invert in dark mode */
+.dark .devicon-nextjs-plain,
+.dark .devicon-vercel-plain {
+  filter: invert(1);
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

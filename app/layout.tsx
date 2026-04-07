@@ -28,7 +28,7 @@ const ovo = Ovo({
 export const metadata: Metadata = {
   title: "Tibebu Dereje - Software Engineer | AI & Fullstack Developer",
   description:
-    "Portfolio of Tibebu Dereje, a Fullstack Developer specializing in AI, DevOps, and modern web applications.",
+    "Portfolio of Tibebu Dereje, a Fullstack Developer specializing in AI, DevOps, cloud computing, and modern web applications.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -47,6 +47,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+      </head>
       <body className={`${inter.variable} ${outfit.variable} ${ovo.variable}
           font-sans antialiased bg-background text-foreground
           leading-8 overflow-x-hidden`}>
