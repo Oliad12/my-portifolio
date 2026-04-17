@@ -270,6 +270,66 @@ export const workData: {
     "QR scanner allows instant ticket validation at event entry.",
     "Demonstrates real-world SaaS development with payments, queues, and real-time data.",
   ],
+},
+{
+  id: 8,
+  slug: "salespro-saas-dashboard",
+  title: "SalesPro SaaS Dashboard",
+  description: "A scalable multi-tenant SaaS sales dashboard that provides real-time analytics, role-based access, subscription management, and AI-powered business insights for modern companies.",
+  bgImage: "/projects/salespro/overview.png",
+  gitUrl: "https://github.com/Oliad12/salespro-dashboard.git",
+  previewUrl: "https://salespro-dashboard.vercel.app",
+  type: "SaaS",
+
+  problem: [
+    "Small and medium businesses lacked a centralized system to track sales, customers, and revenue in real-time.",
+    "Managing data across teams without proper role-based access caused security and workflow issues.",
+    "Existing dashboards were either too complex or lacked customization and scalability.",
+    "Businesses needed actionable insights but lacked AI-driven analytics tools."
+  ],
+
+  solution: [
+    "Built a scalable multi-tenant SaaS dashboard using Next.js and Node.js with a clean backend architecture.",
+    "Implemented secure authentication and role-based access control (admin, manager, staff).",
+    "Designed RESTful APIs with Prisma ORM and PostgreSQL for efficient data management.",
+    "Integrated Stripe for subscription-based payments and plan management.",
+    "Developed real-time analytics dashboard with charts for revenue, orders, and customer insights.",
+    "Added AI-powered insights to analyze sales trends and provide business recommendations.",
+    "Implemented Docker for containerization and CI/CD pipelines for automated deployment.",
+    "Created responsive UI with dark mode, notifications, and modern UX design."
+  ],
+
+  techStack: [
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "Redux Toolkit",
+    "Node.js",
+    "Express",
+    "Prisma",
+    "PostgreSQL",
+    "Stripe",
+    "OpenAI API",
+    "Docker",
+    "GitHub Actions",
+    "RBAC"
+  ],
+
+  screenshots: [
+    "/projects/salespro/home.png",
+    "/projects/salespro/dashboard.png",
+    "/projects/salespro/analytics1.png",
+    "/projects/salespro/analytics.png"    
+  ],
+
+  outcome: [
+    "Developed a production-ready SaaS dashboard with multi-tenant architecture.",
+    "Enabled businesses to track revenue, customers, and sales performance in real-time.",
+    "Implemented subscription-based monetization using Stripe.",
+    "Enhanced decision-making using AI-powered insights and analytics.",
+    "Demonstrated strong backend architecture, DevOps, and full-stack development skills.",
+    "Positioned as a scalable SaaS product suitable for real-world deployment and clients."
+  ]
 }
 
 ];
