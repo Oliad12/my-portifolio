@@ -34,20 +34,23 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Tibebu Dereje is a Full Stack Software Engineer specializing in AI systems, SaaS platforms, cloud computing, and scalable web applications.",
-
+    "Tibebu Dereje is a Full Stack Software Engineer building AI-powered SaaS platforms, modern DevOps tools, and cloud-based systems using Next.js, Node.js, and scalable web applications.",
+  
   keywords: [
     "Tibebu Dereje",
-    "Full Stack Developer",
-    "AI Developer",
+    "Full Stack Developer Ethiopia",
     "Next.js Developer",
+    "AI SaaS Engineer",
+    "React Developer Portfolio",
+    "Node.js Backend Developer",
+    "Prisma PostgreSQL Developer",
+    "Cloud DevOps Engineer",
     "Software Engineer Ethiopia",
     "SaaS Developer",
-    "Node.js",
-    "React Developer",
-    "Cloud Computing",
-    "DevOps",
+    "AI Developer",
+    "Web Developer",
   ],
+
 
   authors: [
     {
@@ -72,7 +75,7 @@ export const metadata: Metadata = {
     siteName: "Tibebu Portfolio",
     images: [
       {
-        url: "/og-image.png", 
+        url: "https://tibebudere.vercel.app/og-image.png", 
         width: 1200,
         height: 630,
         alt: "Tibebu Dereje Portfolio",
@@ -87,12 +90,16 @@ export const metadata: Metadata = {
     title: "Tibebu Dereje | Software Engineer",
     description:
       "Full Stack Developer building AI-powered SaaS and scalable applications.",
-    images: ["/og-image.png"],
-  },
+    images: ["https://tibebudere.vercel.app/og-image.png"],
+    creator: "@tibebudere",},
 
   robots: {
     index: true,
     follow: true,
+  },
+
+    alternates: {
+    canonical: "https://tibebudere.vercel.app",
   },
 
   verification: {

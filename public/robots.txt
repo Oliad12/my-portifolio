@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tibebudere.vercel.app
+
+# Sitemaps
+Sitemap: https://tibebudere.vercel.app/sitemap.xml

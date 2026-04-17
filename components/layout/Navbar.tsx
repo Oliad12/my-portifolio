@@ -61,7 +61,7 @@ export const Navbar = () => {
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8, type: "spring", stiffness: 120 }}>
-          <Image src={assets.logo} alt="logo-image" className="w-25 h-25 cursor-pointer" />
+          <Image src={assets.logo} alt="logo-image" className="w-20 h-20 cursor-pointer" />
         </motion.div>
       </Link>
 
