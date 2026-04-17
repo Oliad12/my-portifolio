@@ -26,15 +26,74 @@ const ovo = Ovo({
 });
 
 export const metadata: Metadata = {
-  title: "Tibebu Dereje - Software Engineer | AI & Fullstack Developer",
+  metadataBase: new URL("https://tibebudere.vercel.app"),
+
+  title: {
+    default: "Tibebu Dereje - Software Engineer | AI & Fullstack Developer | SaaS & Cloud Developer",
+    template: "%s | Tibebu Dereje",
+  },
+
   description:
-    "Portfolio of Tibebu Dereje, a Fullstack Developer specializing in AI, DevOps, cloud computing, and modern web applications.",
+    "Tibebu Dereje is a Full Stack Software Engineer specializing in AI systems, SaaS platforms, cloud computing, and scalable web applications.",
+
+  keywords: [
+    "Tibebu Dereje",
+    "Full Stack Developer",
+    "AI Developer",
+    "Next.js Developer",
+    "Software Engineer Ethiopia",
+    "SaaS Developer",
+    "Node.js",
+    "React Developer",
+    "Cloud Computing",
+    "DevOps",
+  ],
+
+  authors: [
+    {
+      name: "Tibebu Dereje",
+      url: "https://tibebudere.vercel.app",
+    },
+  ],
+
+  creator: "Tibebu Dereje",
+
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
-  metadataBase: new URL("https://tibebudere.vercel.app"),
+
+  openGraph: {
+    title: "Tibebu Dereje | Software Engineer & AI Developer",
+    description:
+      "Portfolio of Tibebu Dereje – building scalable AI-powered SaaS platforms and modern web applications.",
+    url: "https://tibebudere.vercel.app",
+    siteName: "Tibebu Portfolio",
+    images: [
+      {
+        url: "/og-image.png", 
+        width: 1200,
+        height: 630,
+        alt: "Tibebu Dereje Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Tibebu Dereje | Software Engineer",
+    description:
+      "Full Stack Developer building AI-powered SaaS and scalable applications.",
+    images: ["/og-image.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 
   verification: {
     google: "-uw8Oim3ps2RWq5I1WpddMsOw0ZHR9xwV6GOY1uNFHE",

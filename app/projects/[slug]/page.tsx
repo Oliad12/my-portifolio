@@ -61,9 +61,8 @@ export default function ProjectDetail() {
   }
 
   return (
-    <div className="w-full mt-16 px-4 md:px-[10%] lg:px-[14%] py-12 scroll-mt-20">
-      <section className="relative w-full h-48 sm:h-72 md:h-[112.5] overflow-hidden rounded-xl">
-        <Image
+    <div className="w-full mt-26 px-4 md:px-[12%] lg:px-[14%] py-12 scroll-mt-20">
+<section className="relative w-full h-48 sm:h-72 md:h-92 overflow-hidden rounded-xl">        <Image
           src={project.bgImage}
           alt={project.title}
           fill
