@@ -2,10 +2,10 @@
 import user_image from './user-image.png';
 import project_icon from './project-icon.png';
 import vscode from './vscode.png';
-import firebase from './firebase.png';
 import figma from './figma.png';
 import git from './git.png';
-import mongodb from './mongodb.png';
+import postman from './postman.png';
+import cursor from './cursor.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import profile_img1 from './profile-img1.png';
@@ -21,15 +21,16 @@ import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
 import graphics_icon from './graphics-icon.png';
 import send_icon from './send-icon.png';
+import github from './github.png';
 
 export const assets = {
     user_image,
     project_icon,
     vscode,
-    firebase,
+    github,
     figma,
     git,
-    mongodb,
+    postman,
     right_arrow_white,
     logo,
     profile_img1,
@@ -43,11 +44,12 @@ export const assets = {
     web_icon,
     mobile_icon,
     ui_icon,
+    cursor,
     graphics_icon,
     send_icon,
 };
 
-export const toolsData = [vscode, firebase, mongodb, figma, git];
+export const toolsData = [vscode, cursor, postman, github, git, figma];
 export type ProjectType = "All" | "Full-Stack" | "SaaS" | "DevOps" | "AI /ML";
 
 export const workData: {
@@ -138,59 +140,7 @@ export const workData: {
   ]
 },
   {
-    id: 3,
-    slug: "photography-website",
-    title: "Photography Website",
-    description: "A modern photography website built with Next.js, Tailwind CSS, Sanity CMS, and Cloudinary. Features responsive galleries, optimized images, and smooth animations.",
-    bgImage: "/work-3.png",
-    gitUrl: "https://github.com/Oliad12/modern-photography-portfolio.git",
-    previewUrl: "",
-    type: "Full-Stack",
-    problem: [
-      "Photographers needed an online portfolio to showcase their work professionally.",
-      "Existing templates lacked customization and modern UI."
-    ],
-    solution: [
-      "Designed a fully responsive UI/UX for photographers.",
-      "Focused on showcasing images with a clean layout and smooth transitions.",
-      "Optimized for mobile and desktop devices."
-    ],
-    techStack: ["Figma", "Nextjs", "Tailwind CSS", "Typescript", "Sanity CMS", "Cloudinary"],
-    screenshots: ["/work-3.png"],
-    outcome: [
-      "Created an attractive app photography website.",
-      "Demonstrated UI/UX design skills.",
-      "Used as a portfolio piece for future clients."
-    ]
-  },
-  {
-    id: 4,
-    slug: "ui-ux-design",
-    title: "UI/UX Design Project",
-    description: "UI/UX design case study highlighting wireframing, prototyping, and accessibility principles.",
-    bgImage: "/work-4.png",
-    gitUrl: "",
-    previewUrl: "",
-    type: "DevOps", 
-    problem: [
-      "Clients needed a design that follows modern UI/UX principles.",
-      "Ensuring accessibility and usability was a challenge."
-    ],
-    solution: [
-      "Created wireframes and prototypes using Figma.",
-      "Applied best practices in usability and accessibility.",
-      "Iterated based on feedback to improve interaction and flow."
-    ],
-    techStack: ["Figma", "Adobe XD", "User Research", "Prototyping"],
-    screenshots: ["/work-4.png"],
-    outcome: [
-      "Produced a professional design case study.",
-      "Improved understanding of UI/UX design process.",
-      "Can be presented as a portfolio project."
-    ]
-  },
-  {
-  id: 5,
+  id: 3,
   slug: "cms-project",
   title: "Content Management system",
   description: "A full-featured web-based CMS enabling users to create, manage, and publish content efficiently with role-based access and modern UX.",
@@ -223,11 +173,11 @@ export const workData: {
   ]
 },
 {
-  id: 6,
+  id: 4,
   slug: "ethiopian-ticket-marketplace",
   title: "Ethiopian Event Ticketing",
   description: "A full-stack real-time event ticketing platform built for the Ethiopian market, with Chapa (ETB) payments, smart queue system, QR ticket scanning, and a peer-to-peer resale marketplace.",
-  bgImage: "/projects/ticket/homet.png",
+  bgImage: "/projects/ticket/home.png",
   gitUrl: "https://github.com/Oliad12/ticket-marketplace-saas.git",
   previewUrl: "https://ticket-marketplace-saas.vercel.app",
   type: "SaaS",
@@ -272,7 +222,7 @@ export const workData: {
   ],
 },
 {
-  id: 8,
+  id: 5,
   slug: "salespro-saas-dashboard",
   title: "SalesPro SaaS Dashboard",
   description: "A scalable multi-tenant SaaS sales dashboard that provides real-time analytics, role-based access, subscription management, and AI-powered business insights for modern companies.",
@@ -399,13 +349,6 @@ export const testimonials = [
     image: "/avatar-3.png",
   },
   {
-    name: "Sara Williams",
-    role: "Product Manager",
-    message:
-      "Great attention to detail and strong ownership of tasks. Tibebu delivers high-quality code and always meets deadlines.",
-    image: "/avatar-4.png",
-  },
-  {
     name: "Tilahun Tereke",
     role: "Teammate",
     message:
@@ -422,7 +365,7 @@ export const testimonials = [
 ];
 
 export const achievementsList = [
-  { postfix: "+", metric: "Projects", value: 50 },
+  { postfix: "+", metric: "Projects", value: 20 },
   { prefix: "~", metric: "Users", value: 10 },
   { prefix: ">", metric: "Years", value: 3 },
   { postfix: "%", label: "On-time", value: 100 }

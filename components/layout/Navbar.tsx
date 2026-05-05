@@ -61,12 +61,12 @@ export const Navbar = () => {
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8, type: "spring", stiffness: 120 }}>
-          <Image src={assets.logo} alt="logo-image" className="w-20 h-20 cursor-pointer" />
+          <Image src={assets.logo} alt="logo-image" className="ml-5 w-20 h-20 cursor-pointer" />
         </motion.div>
       </Link>
 
       <div className="flex items-center gap-4">
-        <ul className={`hidden md:flex gap-2 p-0.5 lg:gap-8 items-center rounded-full px-7 py-2 transition duration-300 ${desktopMenuClass}`}>
+        <ul className={`hidden md:flex md:gap-6 gap-2 p-0.5 lg:gap-8 items-center rounded-full px-7 py-2 transition duration-300 ${desktopMenuClass}`}>
           <li><Link className="font-Ovo hover:text-purple-600 transition-colors duration-300" href="/">Home</Link></li>
           <li><Link className="font-Ovo hover:text-purple-600 transition-colors duration-300" href="/about">About Me</Link></li>
           <li><Link className="font-Ovo hover:text-purple-600 transition-colors duration-300" href="/services">Services</Link></li>
