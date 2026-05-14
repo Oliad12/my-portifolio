@@ -8,7 +8,6 @@ import postman from './postman.png';
 import cursor from './cursor.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
-import profile_img1 from './profile-img1.png';
 import profile_img2 from './tt.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
@@ -33,7 +32,6 @@ export const assets = {
     postman,
     right_arrow_white,
     logo,
-    profile_img1,
     profile_img2,
     download_icon,
     hand_icon,
@@ -365,9 +363,9 @@ export const testimonials = [
 ];
 
 export const achievementsList = [
-  { postfix: "+", metric: "Projects", value: 20 },
+  { postfix: "+", metric: "Projects", value: 30 },
   { prefix: "~", metric: "Users", value: 10 },
-  { prefix: ">", metric: "Years", value: 3 },
+  { prefix: ">", metric: "Years", value: 2 },
   { postfix: "%", label: "On-time", value: 100 }
 ];
 

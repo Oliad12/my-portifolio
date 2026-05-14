@@ -13,8 +13,8 @@ export function HeroSection() {
   const isDark = theme === "dark";
 
   return (
-    <section className="w-full px-[5%] py-10 mt-20 scroll-mt-20">
-      <div className="absolute inset-0 -z-10 opacity-30 blur-3xl bg-linear-to-r from-purple-400 via-pink-400 to-orange-300"></div>
+    <section className="w-full px-[5%] py-10 mt-26 scroll-mt-20">
+      <div className="absolute inset-0 -z-10 opacity-30 blur-3xl"></div>
       <div className="max-w-6xl w-full grid md:grid-cols-2 items-center gap-12">
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
@@ -39,7 +39,10 @@ export function HeroSection() {
             transition={{ duration: 0.6 }}
             className="text-sm uppercase tracking-widest text-muted-foreground"
           >
-            Hello, I&apos;m
+            Hello, 
+            <span className="text-xl sm:text-2xl font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-orange-400">
+            I&apos;m
+            </span>
           </motion.p>
 
           <motion.h1
@@ -59,14 +62,16 @@ export function HeroSection() {
           >
             <TypeAnimation
               sequence={[
+                "Software Engineering",
+                1500,
                 "Full-Stack Developer",
-                1000,
+                1500,
                 "SaaS Application Builder",
-                1000,
+                1500,
                 "AI-Powered Web Developer",
-                1000,
+                1500,
                 "DevOps Engineer",
-                1000,
+                1500,
               ]}
               speed={50}
               repeat={Infinity}
@@ -79,15 +84,16 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-base sm:text-lg text-muted-foreground mx-auto md:mx-0 max-w-md font-Ovo"
           >
-            Helping startups and businesses transform ideas into scalable,
-            AI-powered platforms that deliver measurable results.
+            I build scalable modern web applications, AI-powered SaaS
+            platforms, and high-performance digital experiences using
+            React, Next.js, Node.js, TypeScript, Cloud, and DevOps tools.
           </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8 }}
-          className="flex flex-col sm:flex-row items-center gap-4 mt-10 justify-center"
+          className="flex flex-col sm:flex-row items-center sm:justify-center gap-4 mt-10"
         >
             <Button asChild size="lg" variant="outline" className="rounded-full px-8">
               <Link
@@ -129,14 +135,18 @@ export function HeroSection() {
             </Button>
           </motion.div>
 
-          <motion.p
+        <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1 }}
-            className="text-sm text-transparent mt-4 bg-clip-text bg-linear-to-r from-green-500 to-orange-400"
+            transition={{ delay: 1 }}
+            className="flex items-center gap-3 justify-center md:justify-start pt-4"
           >
-            Available for freelance and remote project&apos;s worldwide.
-          </motion.p>
+            <div className="h-3 w-3 rounded-full bg-green-500 animate-pulse" />
+
+            <p className="text-sm text-muted-foreground">
+              Available for freelance & remote opportunities worldwide
+            </p>
+          </motion.div>
         </div>
       </div>
     </section>
