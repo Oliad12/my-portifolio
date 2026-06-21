@@ -22,7 +22,7 @@ export const AboutSection = () => {
       </div>
 
       {/* Content */}
-      <div className="flex w-full flex-col lg:flex-row items-center gap-7 lg:gap-14 my-3">
+      <div className="flex w-full flex-col lg:flex-row lg:items-start items-center gap-7 lg:gap-14">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -36,7 +36,7 @@ export const AboutSection = () => {
             width={500}
             height={500}
             priority
-            className="w-72 sm:w-96 lg:w-107.5 h-auto rounded-3xl object-cover border-4 border-gray-300
+            className="w-72 sm:w-96 lg:w-107.5 h-auto rounded-3xl object-cover border-4 border-gray-300 cursor-pointer
               dark:border-gray-600 shadow-2xl transition-transform duration-500 hover:scale-105"
           />
         </motion.div>
@@ -64,7 +64,7 @@ export const AboutSection = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="leading-8 text-gray-600 dark:text-gray-300 font-Ovo max-w-3xl"
+            className="leading-8 font-Ovo max-w-3xl"
           >
             I am an{" "}
             <span className="font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-400 to-orange-300">
