@@ -26,11 +26,12 @@ export const ExperienceSection = () => {
           {/* --- Experience Column --- */}
           <article className="relative pl-8">
             <div className="absolute left-3 top-0 bottom-0 w-px bg-blue-500/20" />
-            <h2 className="flex items-center gap-2 text-xl font-bold mb-12 text-blue-600 hover:text-blue-800 transition-colors duration-300 relative z-10">
+            <h2 className="flex items-center gap-2 text-xl font-bold mb-12 text-blue-600
+             hover:text-blue-800 transition-colors duration-300 relative z-10">
               <Briefcase size={20} /> Experience
             </h2>
 
-            <div className="space-y-12 relative z-10">
+            <div className="space-y-5 relative z-10">
               {experienceData.map((exp, index) => (
                 <motion.div
                   key={index}
@@ -42,8 +43,9 @@ export const ExperienceSection = () => {
                 >
                   <span className="absolute -left-10 top-6 h-1.5 w-1.5 rounded-full bg-blue-600 ring-4 ring-background animate-pulse" />
 
-                  <Card className="overflow-hidden transition-all duration-300 cursor-pointer border border-transparent hover:border-blue-400 hover:shadow-lg">
-                    <CardContent className="p-6 flex flex-col gap-3">
+                  <Card className="overflow-hidden transition-all duration-300 cursor-pointer border border-transparent
+                   hover:border-blue-400 hover:shadow-lg">
+                    <CardContent className="p-2 flex flex-col gap-3">
                       <div className="flex justify-between items-start flex-wrap gap-2">
                         <h3 className="font-bold text-lg transition-colors group-hover:text-blue-600">
                           {exp.role}
@@ -86,7 +88,7 @@ export const ExperienceSection = () => {
                         </ul>
                       )}
 
-                      <div className="flex flex-wrap gap-2 pt-2 text-purple-600/50">
+                      <div className="flex flex-wrap gap-2 pt-2 text-purple-600">
                         {exp.skills.map((skill, i) => (
                           <Badge key={i} variant="secondary">
                             {skill}
@@ -103,11 +105,12 @@ export const ExperienceSection = () => {
           {/* --- Education Column --- */}
           <article className="relative pl-8">
             <div className="absolute left-3 top-0 bottom-0 w-px bg-amber-400/30" />
-            <h2 className="flex items-center gap-2 text-xl font-bold mb-12 text-amber-600 hover:text-amber-800 transition-colors duration-300 relative z-10">
+            <h2 className="flex items-center gap-2 text-xl font-bold mb-12 text-amber-600
+             hover:text-amber-800 transition-colors duration-300 relative z-10">
               <GraduationCap size={20} /> Education
             </h2>
 
-            <div className="space-y-12 relative z-10">
+            <div className="space-y-8 relative z-10">
               {educationData.map((edu, index) => (
                 <motion.div
                   key={index}
@@ -120,7 +123,7 @@ export const ExperienceSection = () => {
                   <span className="absolute -left-10 top-6 h-1.5 w-1.5 rounded-full bg-amber-600 ring-4 ring-background animate-pulse" />
 
                   <Card className="overflow-hidden transition-all duration-300 cursor-pointer border border-transparent hover:border-amber-400 hover:shadow-lg">
-                    <CardContent className="p-6 flex flex-col gap-3">
+                    <CardContent className="p-2 flex flex-col gap-3">
                       <h3 className="font-semibold text-lg transition-colors group-hover:text-amber-600">
                         {edu.degree}
                       </h3>
