@@ -4,105 +4,132 @@ import { assets, toolsData } from "@/assets/assets";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export const AboutSection = ({}) => {
+export const AboutSection = () => {
   return (
     <motion.section
       id="about"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className="w-full px-6 sm:px-10 lg:px-[10%] xl:px-[12%] mt-0 sm:mt-8 py-12 scroll-mt-20"
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="w-full px-6 sm:px-10 lg:px-[10%] xl:px-[12%] py-12 scroll-mt-20"
     >
-      <p className="uppercase tracking-[0.3em] text-center text-sm text-slate-500 dark:text-slate-500 mb-4">
-        Get To Know Me
-      </p>
-      <motion.h2
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-        className="text-center text-4xl sm:text-5xl font-Ovo mb-10"
-      >
-        About{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400">
-          Me
-        </span>
-      </motion.h2>
+      {/* Section Heading */}
+      <div className="flex justify-center mb-10">
+        <p className="typing-text uppercase tracking-[0.3em] text-sm sm:text-base">
+          Get To Know Me
+        </p>
+      </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        className="flex w-full flex-col lg:flex-row items-center gap-10 lg:gap-16 my-5"
-      >
+      {/* Content */}
+      <div className="flex w-full flex-col lg:flex-row items-center gap-7 lg:gap-14 my-3">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="flex justify-cente"
+          className="flex justify-center shrink-0"
         >
           <Image
             src={assets.user_image}
             alt="Tibebu Dereje - AI Full Stack Developer"
             width={500}
             height={500}
-            className="w-70 sm:w-87.5 lg:w-107.5 h-auto rounded-3xl object-cover border-4 border-gray-300 dark:border-gray-600 shadow-2xl"
+            priority
+            className="w-72 sm:w-96 lg:w-107.5 h-auto rounded-3xl object-cover border-4 border-gray-300
+              dark:border-gray-600 shadow-2xl transition-transform duration-500 hover:scale-105"
           />
         </motion.div>
 
+        {/* About Content */}
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
           className="flex-1"
         >
+          <motion.h2
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-3xl sm:text-4xl font-bold mb-6"
+          >
+            AI Full-Stack Developer
+          </motion.h2>
+
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            className="mt-10 mb-10 max-w-2xl font-Ovo"
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="leading-8 text-gray-600 dark:text-gray-300 font-Ovo max-w-3xl"
           >
-           I build
-            AI-focused{" "}
-            <span className="font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-400 to-orange-200">
-              Full-Stack Developer
+            I am an{" "}
+            <span className="font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-400 to-orange-300">
+              AI Full-Stack Developer
             </span>{" "}
-            helping startups and businesses build scalable, high-performance digital platforms. From modern web
-            applications to AI-powered systems and subscription-based platforms,
-            I deliver secure, optimized, and production-ready solutions designed
-            for real business growth. I combine strong technical expertise with
-            a problem-solving mindset to turn complex ideas into efficient,
-            user-friendly, and revenue-generating products.
+            passionate about building modern SaaS platforms, AI-powered
+            applications, admin dashboards, and scalable web solutions. I
+            specialize in transforming complex ideas into secure,
+            high-performance, and user-friendly digital products that help
+            businesses grow and operate more efficiently.
+            <br />
+            <br />
+            With expertise in Next.js, TypeScript, React, Node.js, Express,
+            Prisma, PostgreSQL, Supabase, and AI integrations, I develop
+            production-ready applications focused on performance, scalability,
+            and exceptional user experience.
           </motion.p>
-          <p className="mt-6 mb-8 max-w-2xl text-center text-blue-500 leading-relaxed font-Ovo rounded-full p-2 border-t-4 border-blue-300 shadow-lg">
-            Based in Ethiopia — working with clients worldwide.
-          </p>
-          <motion.h4
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.3, delay: 0.5 }}
-            className="my-6 font-Ovo"
-          >
-            Tools I Use
-          </motion.h4>
-          <motion.ul
+
+          {/* Availability Badge */}
+          <div className="mt-8">
+            <p
+              className="inline-flex items-center px-5 py-2 text-sm font-medium rounded-full border
+                border-blue-300 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 shadow-md"
+            >
+              🌍 Available for Remote Opportunities Worldwide
+            </p>
+          </div>
+
+          {/* Tools */}
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1.5, delay: 0.6 }}
-            className="flex items-center gap-3 sm:gap-5"
+            viewport={{ once: true }}
+            transition={{ delay: 0.5 }}
+            className="mt-10"
           >
-            {toolsData.map((tool, index) => (
-              <motion.li
-                key={index}
-                whileInView={{ scale: 1.1 }}
-                className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 
-                rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
-              >
-                <Image src={tool} alt="tool" className="w-5 sm:w-7" />
-              </motion.li>
-            ))}
-          </motion.ul>
+            <h4 className="mb-5 text-lg font-semibold">Tools & Technologies</h4>
+
+            <ul className="flex flex-wrap items-center gap-4">
+              {toolsData.map((tool, index) => (
+                <motion.li
+                  key={index}
+                  whileHover={{
+                    y: -5,
+                    scale: 1.08,
+                  }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 300,
+                  }}
+                  className="flex items-center justify-center w-14 h-14 border
+                    border-gray-300 dark:border-gray-700
+                    rounded-xl bg-white dark:bg-gray-900 shadow-sm cursor-pointer"
+                >
+                  <Image
+                    src={tool}
+                    alt="Technology"
+                    className="w-7 h-7 object-contain"
+                  />
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
         </motion.div>
-      </motion.div>
+      </div>
     </motion.section>
   );
 };

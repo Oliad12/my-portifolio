@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const skills = {
-  Frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux"],
-  Backend: ["Node.js", "Express", "Django", "Spring Boot"],
-  Database: ["PostgreSQL", "MySQL", "MongoDB", "Prisma"],
-  AIDevOps: ["OpenAI API", "Prompt Engineering", "AI Automation", "CI/CD Pipelines", "Docker", "Kubernetes", "AWS"],
+  Frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux", "shadcn/ui"],
+  Backend: ["Node.js", "Express", "Django", "Spring Boot", "REST APIs"],
+  Database: ["PostgreSQL", "MySQL", "MongoDB", "Prisma", "Supabase", "Firebase"],
+  AIDevOps: ["OpenAI API", "Prompt Engineering", "AI Automation", "CI/CD Pipelines", "Docker"],
 }
 
 export const SkillsSection = () => {
@@ -38,7 +38,7 @@ export const SkillsSection = () => {
           <Card key={title} className="p-4 bg-card-bg border rounded-xl border-gray-200 cursor-pointer hover:border-amber-500
                      hover:scale-105 hover:shadow-xl shadow-lg mt-4 transition-all duration-300 ease-in-out">
             <h3 className="font-semibold mb-3 text-[#1608df]">{title}</h3>
-            <ul className="text-sm text-muted-foreground space-y-1">
+            <ul className="text-sm text-muted-foreground space-y-1 font-Ovo">
               {items.map((skill) => (
                 <li key={skill}>
                   <ArrowRight size={15} className="inline-block mx-1 text-blue-300"/> 
